@@ -1,9 +1,34 @@
 site_name: 2ch /ai/ wiki
 site_url: https://2ch-ai.gitgud.site/wiki
-repo_url: https://gitgud.io/2ch-ai/wiki
+
+repo_url: https://gitgud.io/2ch-ai/wiki/
+edit_uri: ~/edit/master/docs/
+
 theme:
   name: material
+  language: ru
+  features:
+    - content.action.edit
+    - navigation.tabs
+
 nav:
-  - Шапка NAI-треда: ./nai/shapka.md
-  - 2chAI easy LORA guide: ./nai/2chAI_easy_LORA_guide.md
-  - 2ch NAI guide: ./nai/2ch_nai_guide.md
+  - /nai/:
+    - Шапка NAI-треда: ./nai/nai-shapka.md
+    - FAQ: ./nai/nai-faq.md
+    - 2ch NAI guide: ./nai/2ch_nai_guide.md
+    - Гайды по обучению лор:
+      - 2chAI easy LORA guide: ./nai/lora/2chAI_easy_LORA_guide.md
+      - 2chAI hard LORA guide: ./nai/lora/2chAI_hard_LoRA_guide.md
+      - Старый гайд по обучению: ./nai/lora/2chAI_LoRA_Dreambooth_guide_old.md
+  - /tech/:
+    - Шапка технотреда: ./tech/tech-shapka.md
+    - Lycoris: ./tech/lycoris.md
+    - Обучение SDXL: ./tech/sdxl.md
+    - Обучение YOLO: ./tech/yolo.md
+    - Legacy ссылки: ./tech/legacy.md
+    - Архивы тредов: ./tech/old_threads.md
+  - /speech/:
+    - Шапка голосового треда: ./speech/speech-shapka.md
+    - Использование RVC: ./speech/rvc.md
+    - Использование SVC: ./speech/svc.md
+
