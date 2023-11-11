@@ -67,10 +67,10 @@ RVC представляет из себя программное обеспеч
 
 | PEA | Сенко (Transpose = 0) | Егор Летов (Transpose = -12)
 | ------------- | ------------- | ------------- |
-pm |  <audio controls src="https://files.catbox.moe/2sz18h.mp3"></audio> |  <audio controls src="https://files.catbox.moe/mvhm0r.mp3"></audio>
-harvest | <audio controls src="https://files.catbox.moe/y7rn3q.mp3"></audio> |<audio controls src="https://files.catbox.moe/m4ng5s.mp3"></audio>
-crepe | <audio controls src="https://files.catbox.moe/ck318u.mp3"></audio> | <audio controls src="https://files.catbox.moe/c783ia.mp3"></audio>
-rmvpe | <audio controls src="https://files.catbox.moe/7ey3f6.mp3"></audio> | <audio controls src="https://files.catbox.moe/pcnd3b.mp3"></audio>
+pm |  <audio controls src="https://files.catbox.moe/2sz18h.mp3" style="width: 250px"></audio> |  <audio controls src="https://files.catbox.moe/mvhm0r.mp3" style="width: 250px"></audio>
+harvest | <audio controls src="https://files.catbox.moe/y7rn3q.mp3" style="width: 250px"></audio> |<audio controls src="https://files.catbox.moe/m4ng5s.mp3" style="width: 250px"></audio>
+crepe | <audio controls src="https://files.catbox.moe/ck318u.mp3" style="width: 250px"></audio> | <audio controls src="https://files.catbox.moe/c783ia.mp3" style="width: 250px"></audio>
+rmvpe | <audio controls src="https://files.catbox.moe/7ey3f6.mp3" style="width: 250px"></audio> | <audio controls src="https://files.catbox.moe/pcnd3b.mp3" style="width: 250px"></audio>
 
 ---
 
