@@ -28,7 +28,7 @@
 
 [B]**➤ Обучение SDXL**[/B]
 
-[https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/sdxl.md](https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/sdxl.md)
+[https://2ch-ai.gitgud.site/wiki/tech/sdxl/](https://2ch-ai.gitgud.site/wiki/tech/sdxl/)
 
 [B]**➤ Гайды по обучению**[/B]
 
@@ -42,7 +42,7 @@
 ✱ [I]*LyCORIS*[/I] (Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion) - проект по созданию алгоритмов для обучения дополнительных частей модели. Ранее имел название LoCon и предлагал лишь тренировку дополнительных conv слоёв. В настоящий момент включает в себя алгоритмы LoCon, LoHa, LoKr, DyLoRA, IA3, а так же на последних dev ветках возможность тренировки всех (или не всех, в зависимости от конфига) частей сети на выбранном ранге:  
 [https://github.com/KohakuBlueleaf/LyCORIS](https://github.com/KohakuBlueleaf/LyCORIS)
 
-Подробнее про алгоритмы в вики [https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/lycoris.md](https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/lycoris.md)
+Подробнее про алгоритмы в вики [https://2ch-ai.gitgud.site/wiki/tech/lycoris/](https://2ch-ai.gitgud.site/wiki/tech/lycoris/)
 
 ✱ [I]*Dreambooth*[/I] – выбор 24 Гб VRAM-бояр. Выдаёт отличные результаты. Генерирует полноразмерные модели:  
 [https://rentry.co/lycoris-and-lora-from-dreambooth](https://rentry.co/lycoris-and-lora-from-dreambooth) (англ.)  
@@ -54,7 +54,7 @@
 **➤ Тренировка YOLO-моделей для ADetailer:**  
 YOLO-модели (You Only Look Once) могут быть обучены для поиска определённых объектов на изображении. В паре с ADetailer они могут быть использованы для автоматического инпеинта по найденной области.
 
-Подробнее в вики: [https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/yolo.md](https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/yolo.md)
+Подробнее в вики: [https://2ch-ai.gitgud.site/wiki/tech/yolo/](https://2ch-ai.gitgud.site/wiki/tech/yolo/)
 
 [I]*Не забываем про золотое правило GIGO ("Garbage in, garbage out"): какой датасет, такой и результат.*[/I]
 
@@ -91,11 +91,11 @@ YOLO-модели (You Only Look Once) могут быть обучены для
 
 [B]**➤ Legacy ссылки на устаревшие технологии и гайды с дополнительной информацией**[/B]
 
-[https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/legacy.md](https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/legacy.md)
+[https://2ch-ai.gitgud.site/wiki/tech/legacy/](https://2ch-ai.gitgud.site/wiki/tech/legacy/)
 
 [B]**➤ Прошлые треды**[/B]
 
-[https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/old_threads.md](https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/old_threads.md)
+[https://2ch-ai.gitgud.site/wiki/tech/old_threads/](https://2ch-ai.gitgud.site/wiki/tech/old_threads/)
 
 
-Шапка: [https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/shapka.md](https://github.com/2ch-ai/wiki/blob/main/diffusers/technothread/shapka.md)
+Шапка: [https://2ch-ai.gitgud.site/wiki/tech/tech-shapka/](https://2ch-ai.gitgud.site/wiki/tech/tech-shapka/)
