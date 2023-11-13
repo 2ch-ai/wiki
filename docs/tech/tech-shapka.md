@@ -3,7 +3,7 @@
 
 ***
 
-(4 стула) | (выебоны) | (оверфит) | (производительность для GPU)
+(4 стула) | (выебоны) | (оверфит) | (производительность GPU)
 ------ | ------ | ------ | ------
 ![](https://i.imgur.com/oYvIzol.png)  | ![](https://i.imgur.com/7zWzj10.png) | ![](https://i.imgur.com/Wo0tLKc.png) | ![](https://i.imgur.com/G7cZOKZ.png)
 
@@ -35,7 +35,7 @@
 Существующую модель можно обучить симулировать определенный стиль или рисовать конкретного персонажа.
 
 ✱ [I]*LoRA*[/I] – "Low Rank Adaptation" – подойдет для любых задач. Отличается малыми требованиями к VRAM (6 Гб+) и быстрым обучением. [https://github.com/cloneofsimo/lora](https://github.com/cloneofsimo/lora) - изначальная имплементация алгоритма, пришедшая из мира архитектуры transformers, тренирует лишь attention слои, гайды по тренировкам:  
-[https://github.com/2ch-ai/wiki/blob/main/diffusers/2chAI_easy_LORA_guide.md](https://github.com/2ch-ai/wiki/blob/main/diffusers/2chAI_easy_LORA_guide.md) - гайд по подготовке датасета и обучению LoRA для неофитов  
+[https://rentry.co/waavd](https://rentry.co/waavd) - гайд по подготовке датасета и обучению LoRA для неофитов  
 [https://rentry.org/2chAI_hard_LoRA_guide](https://rentry.org/2chAI_hard_LoRA_guide) - ещё один гайд по использованию и обучению LoRA  
 [https://rentry.org/59xed3](https://rentry.org/59xed3) - более углубленный гайд по лорам, содержит много инфы для уже разбирающихся (англ.)
 
