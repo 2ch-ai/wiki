@@ -3,9 +3,9 @@
 
 ***
 
-(4 стула) | (выебоны) | (оверфит) | (число итераций для GPU)
+(4 стула) | (выебоны) | (оверфит) | (производительность для GPU)
 ------ | ------ | ------ | ------
-![](https://i.imgur.com/oYvIzol.png)  | ![](https://i.imgur.com/7zWzj10.png) | ![](https://i.imgur.com/Wo0tLKc.png) | ![](https://i.imgur.com/rL0w8ih.png)
+![](https://i.imgur.com/oYvIzol.png)  | ![](https://i.imgur.com/7zWzj10.png) | ![](https://i.imgur.com/Wo0tLKc.png) | ![](https://i.imgur.com/G7cZOKZ.png)
 
 ***
 
