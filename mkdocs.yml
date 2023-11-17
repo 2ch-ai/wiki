@@ -11,6 +11,16 @@ theme:
     - content.action.edit
     - navigation.tabs
 
+extra_css:
+  - assets/css/extended-markdown.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
 nav:
   - /nai/:
     - Шапка NAI-треда: ./nai/nai-shapka.md
@@ -28,7 +38,18 @@ nav:
     - Legacy ссылки: ./tech/legacy.md
     - Архивы тредов: ./tech/old_threads.md
   - /speech/:
+    - Общее: ./speech/index.md
+    - Text To Speech:
+      - Silero: ./speech/tts/silero.md
+      - XTTS: ./speech/tts/xtts.md
+      - Edge: ./speech/tts/edge.md
+      - VITS-Umamusume-voice-synthesizer: ./speech/tts/vits-umamusume-voice-synthesize.md
+      - MoeGoe и MoeTTS: ./speech/tts/moe.md
+    - Speech To Speech:
+      - RVC:
+        - Общее: ./speech/sts/rvc/rvc.md
+        - Использование RVC: ./speech/sts/rvc/rvc-usage.md
+      - SVC:
+        - Общее: ./speech/sts/svc/svc.md
+        - Использование SVC: ./speech/sts/svc/svc-usage.md
     - Шапка голосового треда: ./speech/speech-shapka.md
-    - Использование RVC: ./speech/rvc.md
-    - Использование SVC: ./speech/svc.md
-

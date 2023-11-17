@@ -62,7 +62,7 @@ RVC представляет из себя программное обеспеч
 
 5\. **Pitch extraction algorithm**: Алгоритм преобразования. Опции pm и harvest считаются более быстрыми но менее качественными, в то время как преобразование через crepe и rmvpe занимает больше времени. На момент написания этой статьи default опцией считается `rmvpe` - в большинстве случаев вам нужно использовать именно её.
 
-Оригинальная дорожка:  
+<!-- Оригинальная дорожка:  
 <audio controls src="https://files.catbox.moe/j4he99.mp3"></audio>
 
 | PEA | Сенко (Transpose = 0) | Егор Летов (Transpose = -12)
@@ -70,11 +70,13 @@ RVC представляет из себя программное обеспеч
 pm |  <audio controls src="https://files.catbox.moe/2sz18h.mp3" style="width: 250px"></audio> |  <audio controls src="https://files.catbox.moe/mvhm0r.mp3" style="width: 250px"></audio>
 harvest | <audio controls src="https://files.catbox.moe/y7rn3q.mp3" style="width: 250px"></audio> |<audio controls src="https://files.catbox.moe/m4ng5s.mp3" style="width: 250px"></audio>
 crepe | <audio controls src="https://files.catbox.moe/ck318u.mp3" style="width: 250px"></audio> | <audio controls src="https://files.catbox.moe/c783ia.mp3" style="width: 250px"></audio>
-rmvpe | <audio controls src="https://files.catbox.moe/7ey3f6.mp3" style="width: 250px"></audio> | <audio controls src="https://files.catbox.moe/pcnd3b.mp3" style="width: 250px"></audio>
+rmvpe | <audio controls src="https://files.catbox.moe/7ey3f6.mp3" style="width: 250px"></audio> | <audio controls src="https://files.catbox.moe/pcnd3b.mp3" style="width: 250px"></audio> -->
 
 ---
 
 6\. Нажатие на кнопку "Convert" запускает преобразование трека.
+
+---
 
 7\. Здесь вы увидите мини-плеер для запуска преобразованного трека. При нажатии на символ ⋮ откроется меню, в котором вы сможете сохранить преобразованный трек
 
@@ -85,7 +87,8 @@ rmvpe | <audio controls src="https://files.catbox.moe/7ey3f6.mp3" style="width: 
 В комплекте с RVC идёт несколько UVR5-моделей, которые можно использовать для отделения вокальной части песен от инструментальной через вкладку `Vocals/Accompaniment Separation & Reverberation Removal` в основном UI. Однако, выбор моделей там небольшой и наилучшие модели отсутствуют в комплекте. В связи с этим, я рекомендую вам поставить [Ultimate Vocal Remover](https://github.com/Anjok07/ultimatevocalremovergui) отдельно.
 
 ## Прочие ссылки
-[Англоязычная вики по голосовым нейросетям](https://docs.aihub.wtf/)
+* [Англоязычная вики по голосовым нейросетям](https://docs.aihub.wtf/)
+* [Русскоязычный гайд по Mangio-RVC](https://github.com/MaHivka/ultimate-voice-models-FAQ/wiki/RVC)
 
 ## TODO
 - Альтернативные UI
