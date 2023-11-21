@@ -9,17 +9,47 @@ theme:
   language: ru
   features:
     - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
     - navigation.tabs
+    - navigation.expand
+    - content.tooltips
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 extra_css:
   - assets/css/extended-markdown.css
 
 markdown_extensions:
+  - abbr
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.snippets
   - attr_list
   - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+      permalink_title: Постоянная ссылка
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 nav:
   - /nai/:

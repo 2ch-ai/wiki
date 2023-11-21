@@ -49,3 +49,7 @@
     margin-bottom: 0;
     margin-top: 0
 }
+
+.md-grid {
+    max-width: 1670px;
+}

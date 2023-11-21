@@ -1,0 +1,72 @@
+subsets = []
+
+[noise_args]
+
+[sample_args]
+
+[general_args.args]
+pretrained_model_name_or_path = "C:/ai/nai-nsfw.ckpt"
+mixed_precision = "bf16"
+seed = 42
+max_data_loader_n_workers = 1
+persistent_data_loader_workers = true
+max_token_length = 225
+prior_loss_weight = 1.0
+clip_skip = 2
+xformers = true
+cache_latents = true
+max_train_epochs = 20
+
+[general_args.dataset_args]
+resolution = [ 768, 768,]
+batch_size = 5
+
+[network_args.args]
+network_dim = 64
+network_alpha = 64.0
+min_timestep = 0
+max_timestep = 1000
+fa = false
+
+[optimizer_args.args]
+optimizer_type = "AdamW8bit"
+lr_scheduler = "cosine"
+learning_rate = 0.0001
+max_grad_norm = 1.0
+lr_scheduler_type = "LoraEasyCustomOptimizer.CustomOptimizers.CosineAnnealingWarmupRestarts"
+lr_scheduler_num_cycles = 4
+unet_lr = 0.0001
+text_encoder_lr = 5e-5
+warmup_ratio = 0.05
+min_snr_gamma = 5
+
+[saving_args.args]
+output_dir = "C:/ai/my-lora-dir"
+save_precision = "bf16"
+save_model_as = "safetensors"
+output_name = "my-best-waifu-lora"
+save_every_n_epochs = 1
+
+[bucket_args.dataset_args]
+enable_bucket = true
+min_bucket_reso = 256
+max_bucket_reso = 1536
+bucket_reso_steps = 64
+bucket_no_upscale = true
+
+[logging_args.args]
+logging_dir = "C:/ai/my-lora-logs"
+log_prefix = "my-best-waifu-logs-"
+log_with = "tensorboard"
+
+[network_args.args.network_args]
+conv_dim = 32
+conv_alpha = 32.0
+
+[optimizer_args.args.lr_scheduler_args]
+min_lr = 1e-6
+gamma = 0.75
+
+[optimizer_args.args.optimizer_args]
+weight_decay = "0.1"
+betas = "0.9,0.99"
