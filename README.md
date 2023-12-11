@@ -4,7 +4,7 @@
 https://2ch-ai.gitgud.site/wiki
 
 ## Как поставить локально (Windows)
-Скачивание проекта и установка зависимотей: 
+Скачивание проекта и установка зависимостей: 
 ```
 git clone git@ssh.gitgud.io:2ch-ai/wiki.git
 cd ./wiki
