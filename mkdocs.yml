@@ -83,3 +83,10 @@ nav:
         - Общее: ./speech/sts/svc/svc.md
         - Использование SVC: ./speech/sts/svc/svc-usage.md
     - Шапка голосового треда: ./speech/speech-shapka.md
+  - /llama/:
+    - Общее: ./llama/index.md
+    - Гайды:
+      - KoboldCpp: ./llama/guides/kobold-cpp.md
+      - Text Generation Webui: ./llama/guides/text-generation-webui.md
+      - TavernAI: ./llama/guides/tavern-ai.md
+    - Шапка LLaMA-треда: ./llama/llama-shapka.md
