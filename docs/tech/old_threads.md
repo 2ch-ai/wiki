@@ -7,7 +7,7 @@
 7. [https://arhivach.top/thread/868143/](https://arhivach.top/thread/868143/)
 8. [https://arhivach.top/thread/873010/](https://arhivach.top/thread/873010/)
 9. [https://arhivach.top/thread/878287/](https://arhivach.top/thread/878287/) [https://2ch.hk/ai/arch/2023-09-02/res/198503.html](https://2ch.hk/ai/arch/2023-09-02/res/198503.html)
-10. [https://arhivach.top/thread/893334/](https://arhivach.top/thread/893334/)
+10. [https://arhivach.top/thread/893334/](https://arhivach.top/thread/893334/) [https://2ch.hk/ai/arch/2023-11-15/res/314956.html](https://2ch.hk/ai/arch/2023-11-15/res/314956.html)
 11. [https://arhivach.top/thread/908751/](https://arhivach.top/thread/908751/)
 12. [https://arhivach.top/thread/927830/](https://arhivach.top/thread/927830/)
 13. [https://arhivach.top/thread/946884/](https://arhivach.top/thread/946884/)
