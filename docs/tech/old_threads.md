@@ -12,4 +12,4 @@
 12. [https://arhivach.top/thread/927830/](https://arhivach.top/thread/927830/)
 13. [https://arhivach.top/thread/946884/](https://arhivach.top/thread/946884/)
 14. [https://arhivach.top/thread/952338/](https://arhivach.top/thread/952338/)
-15. [https://arhivach.top/thread/962087/][https://arhivach.top/thread/962087/]
+15. [https://arhivach.top/thread/962087/](https://arhivach.top/thread/962087/)
