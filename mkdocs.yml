@@ -53,13 +53,15 @@ markdown_extensions:
 
 nav:
   - /nai/:
-    - Шапка NAI-треда: ./nai/nai-shapka.md
     - FAQ: ./nai/nai-faq.md
     - 2ch NAI guide: ./nai/2ch_nai_guide.md
+    - Глоссарий:
+      - VAE & Latent Space: ./nai/terms/vae.md
     - Гайды по обучению лор:
       - 2chAI easy LORA guide: ./nai/lora/2chAI_easy_LORA_guide.md
       - 2chAI hard LORA guide: ./nai/lora/2chAI_hard_LoRA_guide.md
       - Старый гайд по обучению: ./nai/lora/2chAI_LoRA_Dreambooth_guide_old.md
+    - Шапка NAI-треда: ./nai/nai-shapka.md
   - /tech/:
     - Шапка технотреда: ./tech/tech-shapka.md
     - Lycoris: ./tech/lycoris.md
