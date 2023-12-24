@@ -1,3 +1,7 @@
+---
+status: deprecated
+---
+
 # Меняем голос в песнях при помощи so-vits-svc-fork
 
 !!! warning "От автора"

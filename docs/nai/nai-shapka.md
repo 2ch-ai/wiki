@@ -1,11 +1,11 @@
 Тег   | Тема
 ----- | ------
-nai   | NovelAI and WaifuDiffusion тред `#xxxx`
+nai   | NovelAI and WaifuDiffusion тред #==xxxx==
 
 ---
 
 Генерируем тяночек!  
-Прошлый `>>`  ` https://arhivach.top/`
+Прошлый ==>>==  ==<https://arhivach.top/>==
 
 Схожие тематические треды:  
 — Технотред [>>478081](https://2ch.hk/ai/res/478081.html)  

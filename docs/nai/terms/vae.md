@@ -1,3 +1,7 @@
+---
+status: new
+---
+
 # VAE & Latent Space
 
 ## Что такое VAE?

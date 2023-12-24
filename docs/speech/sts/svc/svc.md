@@ -1,3 +1,7 @@
+---
+status: deprecated
+---
+
 # SVC
 
 [[Github]](https://github.com/voicepaw/so-vits-svc-fork) | [[Гайд по установке и использованию]](https://rentry.org/tts_so_vits_svc_fork_for_beginners)

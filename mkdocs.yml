@@ -12,6 +12,7 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    - content.tooltips
     - navigation.tabs
     - navigation.expand
     - content.tooltips
@@ -33,10 +34,12 @@ extra_css:
 
 plugins:
   - glightbox
+  - search
 
 markdown_extensions:
   - abbr
   - admonition
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.snippets
