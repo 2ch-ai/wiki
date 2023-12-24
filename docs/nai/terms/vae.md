@@ -44,7 +44,7 @@
 
 | NovelAI VAE | [kl-f8-anime2 VAE](https://civitai.com/models/23906/kl-f8-anime2-vae) | [EMA 560k VAE](https://huggingface.co/stabilityai/sd-vae-ft-ema-original/resolve/main/vae-ft-ema-560000-ema-pruned.safetensors?download=true) | [MSE 840k VAE](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors?download=true)
 |:-:|:-:|:-:|:-:|
-| [![](https://files.catbox.moe/uzvf6j.png)](https://files.catbox.moe/uzvf6j.png) | [![](https://files.catbox.moe/ra1o50.png)](https://files.catbox.moe/ra1o50.png) | [![](https://files.catbox.moe/0j3r2d.png)](https://files.catbox.moe/0j3r2d.png) | [![](https://files.catbox.moe/gkr4an.png)](https://files.catbox.moe/gkr4an.png)
+| ![](https://files.catbox.moe/uzvf6j.png) | ![](https://files.catbox.moe/ra1o50.png) | ![](https://files.catbox.moe/0j3r2d.png) | ![](https://files.catbox.moe/gkr4an.png)
 
 !!! info "Прочие VAE"
     Так же существует большое количество файнтьюнов данных VAE, [которые можно найти на civitai](https://civitai.com/search/models?sortBy=models_v5&query=vae).

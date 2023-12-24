@@ -37,7 +37,7 @@ RVC представляет из себя программное обеспеч
 
 Рассмотрим основные элементы управления RVC WebUI. Всё, что необходимо для преобразования голоса, находится в верхней части первого таба.
 
-[![image](https://files.catbox.moe/1lvezk.png)](https://files.catbox.moe/1lvezk.png)
+![image](https://files.catbox.moe/1lvezk.png)
 
 1\. **Inferencing voice**: выпадающий список со всеми моделями из каталога `/weights`. Выбираем нужный вам файл с моделью
 
