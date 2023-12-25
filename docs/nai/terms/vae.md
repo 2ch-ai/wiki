@@ -96,7 +96,7 @@ status: new
 ![](https://files.catbox.moe/xtfwf2.PNG)
 
 #### Опция Automatically revert VAE to 32-bit floats
-Активация опции `Automatically revert VAE to 32-bit floats` в настройках автоматика приведёт к запуску VAE в режиме точности fp32 если в режиме fp16 VAE начинает возвращать `NaN` вместо корректных значений.
+Активация опции `Automatically revert VAE to 32-bit floats` в настройках автоматика приведёт к запуску VAE в режиме точности fp32 в том случае, если в режиме fp16 VAE начинает возвращать `NaN` вместо корректных значений.
 
 ![](https://files.catbox.moe/gi3jya.PNG)
 
