@@ -59,5 +59,9 @@
 [>> Подробнее про долговременную память](https://github.com/KoboldAI/KoboldAI-Client/wiki/Memory,-Author's-Note-and-World-Info)
 
 
-#Интерфейсы
-Для удобства можно использовать интерфейс TavernAI
+#TODO:
+Для удобства можно использовать интерфейс TavernAI или Text-Generation-WebUI
+
+Описать режимы, Story / Adventure / Chat/ Instruction
+
+Сделать небольшую сводку по семплерам и шизосемплингу
