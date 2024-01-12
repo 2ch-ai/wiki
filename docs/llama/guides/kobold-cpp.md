@@ -19,11 +19,11 @@
 
 **Степень квантования** (чаще всего сокращают до Q_3 или Q5_K_M) это "сжатие модели", потипу lossy видеофайлов. Квантование может сильно уменьшить вес модели, при этом сохраняя её параметры, но модель от этого становится тупее. Чем меньше число после Q_, тем меньше квант, а значит, и меньше её качество. Иногда сильно квантованные модели просто неюзабельны из-за их тупости, как порнуха в 240p, однако на кванах 5 и больше потери качества не такие существенные. Говорят, на квантах Q_3 существует жизнь, но это не доказано.
 
-Ну чтож, анон, давай выберем тебе модельку из самых популярных у анонов.
-- **Если всё супер плохо** и ты сидишь в деревне с бабушкиной пекарни для созвонов в скайпе, качай [OpenHermes-2.5-Mistral-7B](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/blob/main/openhermes-2.5-mistral-7b.Q5_K_M.gguf).
-- **Если у тебя 8гб оперативы и видеокарта уровня 1050ti (или 16гб оперативы и нет видеокарты)**, качай [Frostwind-10.7B](https://huggingface.co/TheBloke/Frostwind-10.7B-v1-GGUF/blob/main/frostwind-10.7b-v1.Q5_K_M.gguf) или [OpenHermes-2.5-Mistral-7B](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/blob/main/openhermes-2.5-mistral-7b.Q5_K_M.gguf).
-- **Если у тебя топовый егровой пека, 32гб оперативы и видеокарта уровня 3060TI/6600XT**, качай [Noromaid-20B](https://huggingface.co/TheBloke/Noromaid-20B-v0.1.1-GGUF/blob/main/noromaid-20b-v0.1.1.Q5_K_M.gguf) или [MLewd-ReMM-L2-Chat-20B](https://huggingface.co/Undi95/MLewd-ReMM-L2-Chat-20B-GGUF/blob/main/MLewd-ReMM-L2-Chat-20B.q5_K_M.gguf).
-- Для специализированных сборок с видюхами майнинг-уровня, вроде NVidia P40 24G можешь попробовать модельки на 70B. Они несколько круче 34B, но не сказать чтобы прям очень сильно, но зато тебе не придется ждать часами одного ответа.
+Ну чтож, анон, давай выберем тебе модельку из самых популярных у анонов.  
+- **Если всё супер плохо** и ты сидишь в деревне с бабушкиной пекарни для созвонов в скайпе, качай [OpenHermes-2.5-Mistral-7B](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/blob/main/openhermes-2.5-mistral-7b.Q5_K_M.gguf).  
+- **Если у тебя 8гб оперативы и видеокарта уровня 1050ti (или 16гб оперативы и нет видеокарты)**, качай [Frostwind-10.7B](https://huggingface.co/TheBloke/Frostwind-10.7B-v1-GGUF/blob/main/frostwind-10.7b-v1.Q5_K_M.gguf) или [OpenHermes-2.5-Mistral-7B](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF/blob/main/openhermes-2.5-mistral-7b.Q5_K_M.gguf).  
+- **Если у тебя топовый егровой пека, 32гб оперативы и видеокарта уровня 3060TI/6600XT**, качай [Noromaid-20B](https://huggingface.co/TheBloke/Noromaid-20B-v0.1.1-GGUF/blob/main/noromaid-20b-v0.1.1.Q5_K_M.gguf) или [MLewd-ReMM-L2-Chat-20B](https://huggingface.co/Undi95/MLewd-ReMM-L2-Chat-20B-GGUF/blob/main/MLewd-ReMM-L2-Chat-20B.q5_K_M.gguf).  
+- Для специализированных сборок с видюхами майнинг-уровня, вроде NVidia P40 24G можешь попробовать модельки на 70B. Они несколько круче 34B, но не сказать чтобы прям очень сильно, но зато тебе не придется ждать часами одного ответа.  
 - Говорят, существует моделька на 180B, но, поверь, тебе это не нужно.
 
 Если же ты решил сам выбрать себе модельку, ищи на huggingface файлы с расширением GGUF. Вот у этого челика есть [огромный список переконвертированных в GGUF моделей](https://huggingface.co/TheBloke?search_models=GGUF), пользуйся поиском.
