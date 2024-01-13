@@ -101,7 +101,7 @@ nav:
     - Общее: ./llama/index.md
     - Гайды:
       - KoboldCpp: ./llama/guides/kobold-cpp.md
-        - Консольные команды ./llama/guides/kobold-cpp/kobold-cpp-consolecommands.md
+        - Консольные команды: ./llama/guides/kobold-cpp/kobold-cpp-consolecommands.md
       - Text Generation Webui: ./llama/guides/text-generation-webui.md
       - TavernAI: ./llama/guides/tavern-ai.md
     - Шапка LLaMA-треда: ./llama/llama-shapka.md
