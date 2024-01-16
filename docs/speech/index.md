@@ -142,9 +142,10 @@
 
     ---
 
-    Оффлайн-система распознавания голоса от русскоязычной команды Silero.
+    Оффлайн-система распознавания голоса от русскоязычной команды Silero. Своего UI нет, но все веса в паблике.
 
-    [[Открыть сайт]](https://silero.ai/tag/our-speech-to-text/) | [[Github]](https://github.com/snakers4/silero-models) | [[Бот в телеге]](https://t.me/silero_audio_bot)
+    [[Распознать онлайн]](https://audio-v-text.silero.ai/) | [[Бот в телеге]](https://t.me/silero_audio_bot)  
+    [[Локальный запуск]](https://github.com/snakers4/silero-models?tab=readme-ov-file#pytorch)
 
 -   __Tinkoff VoiceKit__
 
