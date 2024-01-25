@@ -72,13 +72,27 @@
 
 Список команд можно подсмотреть запустив кобольд из консоли с командой --help. Вот он: [Полный список консольных команд для KoboldCPP](https://2ch-ai.gitgud.site/wiki/llama/guides/kobold-cpp/kobold-cpp-consolecommands/)
 
+##А может робот написать мне историю, создать шедевр?
+Может! И даже больше — он может поиграть с тобой в текстовую РПГ.
 
+У интерфейса KoboldCPP есть 4 режима, их можно выбрать в в настройках, переключаясь между Story/Adventure/Chat/Instruction или нажать кнопку "Scenarios" вверху страницы чтобы выбрать один из заготовленных шаблонов сценария (или даже загрузить его с внешнего сайта).
+
+###Story Mode
+Режим истории будет создавать тебе историю, основанную на твоем первом промпте. Например, вот таком: `Write a romantic story about a japanese schoolboy kissed a girl for the first time in his life. The story starts in the morning in school classroom.`, и ИИ начнет писать тебе историю, кусками по 120 токенов (или сколько ты задашь в настройках). Не забывай про Author's note, это очень важный и мощный инструмент, который втыкает часть инфы посреди контекста, задавая тон повествования или важные ньюансы, которые ты бы хотел видеть в своей истории.
+
+###Adventure Mode
+Режим приключения это, по сути, текстовая игра, в которой ты, пользователь, сам можешь выбирать что и когда сделать или сказать. Сетка будет выдавать тебе абзацы текста на основе твоих ответов, описывая происходящие события или последствия твоих ответов. Например, можешь исекайнуться в фентези манямирок или побывать в шкуре обычного японского школьника, подкатывающего к одноклассницам. Возможности околобезграничны при использовании правильного промпта и Author's note. Например, `Write a thrilling story about a group of university students are lost in the woods on a hiking trip. Player is one of the male students. Students may become badly wounded or even die from natural dangers of the woods. The story starts when all of the students are gathered around a campfire.`.
+Используй ответы вроде `> describe scenario in details` чтобы сетка описала сценарий с самого начала, ввела тебя в курс дела. `> describe Melissa's look and personality` опишет встреченного человечка, а `> try to defend your friends with a flaming stick` поможет тебе одолеть волков/гоблинов/маньяков. Чтобы разговаривать с персонажами, просто пиши ответ в кавычках, вроде `> "Oh, come on, Melissa, stop being such a nerd! Here, have a drink."`.
+
+###Chat Mode
+Ну, это классический чат с лламой. Опиши персонажа в Memory или в Author's note в третьем лице, например `[Character: Kat; age: 20; gender: female; Kat is a rebellius university student who is cheerful and love to play guitar and drinking beer.][The following is a chat message log between Kat and you.]`. Всё, можешь начинать болтать. Функционал для чатинга в кобольде ограничен, например тут нет возможности описать своего аватара, и нет примеров сообщений, так что для комфортного чятинга советую скачать SillyTavern и поставть её.
+
+###Instruction Mode
+Режим инструкций нужен для того чтобы просить ИИ сделать что-то нужное тебе. Например, оформить разметку JSON или написать стишок. У режима инструкций нет конкретной задачи, тебе нужно формулировать её самостоятельно. Просто введи `{{Input}}` и укажи свой запрос, закончив его `{{Output}}`, и сетка выдаст тебе ответ. У разных моделей разные форматы Input и Output, подсмотреть можно у Bloke или на странице модели на huggingface. В настройках нужно указать вид форматов инструкций на котором работает модель, у большинства моделей сейчас формат Alpaca.
 
 #TODO:
 
 Для удобства можно использовать интерфейс TavernAI или Text-Generation-WebUI
-
-Описать режимы, Story / Adventure / Chat/ Instruction
 
 Сделать небольшую сводку по семплерам и шизосемплингу
 
