@@ -44,7 +44,7 @@
 
 Подробнее про алгоритмы в вики [https://2ch-ai.gitgud.site/wiki/tech/lycoris/](https://2ch-ai.gitgud.site/wiki/tech/lycoris/)
 
-✱ [I]*Dreambooth*[/I] – выбор 24 Гб VRAM-бояр. Выдаёт отличные результаты. Генерирует полноразмерные модели:  
+✱ [I]*Dreambooth*[/I] – для SD 1.5 обучение доступно начиная с 16 GB VRAM. Ни одна из потребительских карт не осилит тренировку будки для SDXL. Выдаёт отличные результаты. Генерирует полноразмерные модели:  
 [https://rentry.co/lycoris-and-lora-from-dreambooth](https://rentry.co/lycoris-and-lora-from-dreambooth) (англ.)  
 [https://github.com/nitrosocke/dreambooth-training-guide](https://github.com/nitrosocke/dreambooth-training-guide) (англ.)
 
