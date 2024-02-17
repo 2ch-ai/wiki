@@ -87,7 +87,7 @@ YOLO-модели (You Only Look Once) могут быть обучены для
 [https://rentry.org/sdg-link](https://rentry.org/sdg-link)  
 [https://rentry.org/hdgfaq](https://rentry.org/hdgfaq)  
 [https://rentry.org/hdglorarepo](https://rentry.org/hdglorarepo)  
-[https://gitgud.io/schwabischesbauernbrot/makesomefuckingporn](https://gitgud.io/schwabischesbauernbrot/makesomefuckingporn)  
+[https://gitgud.io/badhands/makesomefuckingporn](https://gitgud.io/badhands/makesomefuckingporn)  
 [https://rentry.org/ponyxl_loras_n_stuff](https://rentry.org/ponyxl_loras_n_stuff)  
 
 [B]**➤ Legacy ссылки на устаревшие технологии и гайды с дополнительной информацией**[/B]
