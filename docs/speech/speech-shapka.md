@@ -57,7 +57,8 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 
 **[B]Q: Надо распознать текст с аудио/видео файла[/B]**
 
-Используй Whisper от OpenAI: [https://github.com/openai/whisper](https://github.com/openai/whisper)  
-Так же есть платные решения от Сбера/Яндекса/Тинькофф.
+Используй Whisper от OpenAI: <https://github.com/openai/whisper>  
+Быстрый скомпилированный для винды whisper: <https://github.com/Purfview/whisper-standalone-win>  
+Так же есть платные решения от Сбера/Яндекса/Тинькофф.  
 
-Шаблон для переката: [https://2ch-ai.gitgud.site/wiki/speech/speech-shapka/](https://2ch-ai.gitgud.site/wiki/speech/speech-shapka/)
+Шаблон для переката: <https://2ch-ai.gitgud.site/wiki/speech/speech-shapka/>
