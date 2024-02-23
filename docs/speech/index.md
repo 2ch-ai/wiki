@@ -136,6 +136,8 @@
 
     Консольная тулза от OpenAI, работает полностью в оффлайне. Поддерживает множество языков, включая русский. Официально доступна в виде [CLI](https://github.com/openai/whisper?tab=readme-ov-file#command-line-usage).
 
+    Так же существует неофициальный [быстрый скомпилированный для винды](https://github.com/Purfview/whisper-standalone-win) вариант.
+
     [[Github]](https://github.com/openai/whisper)
 
 -   __SileroSTT__
