@@ -55,7 +55,7 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 Гайд на русском: <https://github.com/MaHivka/ultimate-voice-models-FAQ/wiki/RVC#создание-собственной-модели>  
 Гайд на английском: <https://docs.aihub.wtf/guide-to-create-a-model/model-training-rvc>  
 Определить переобучение через TensorBoard: <https://docs.aihub.wtf/guide-to-create-a-model/tensorboard-rvc>  
-Если тыква вместо видеокарты, можно тренить в онлайне: https://www.kaggle.com/code/varaslaw/rvc-v2-no-gradio-https-t-me-aisingers-ru/notebook?scriptVersionId=143284909 (инструкция: https://www.youtube .com/watch?v=L-emE1pGUOM )  
+Если тыква вместо видеокарты, можно тренить в онлайне: <https://www.kaggle.com/code/varaslaw/rvc-v2-no-gradio-https-t-me-aisingers-ru/notebook?scriptVersionId=143284909> (инструкция: https://www.youtube .com/watch?v=L-emE1pGUOM )  
 
 **[B]Q: Надо распознать текст с аудио/видео файла[/B]**
 
