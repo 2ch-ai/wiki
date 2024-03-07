@@ -60,7 +60,7 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 **[B]Q: Надо распознать текст с аудио/видео файла[/B]**
 
 Используй Whisper от OpenAI: <https://github.com/openai/whisper>  
-Быстрый скомпилированный для винды whisper: <https://github.com/Purfview/whisper-standalone-win>  
+Быстрый скомпилированный для винды вариант: <https://github.com/Purfview/whisper-standalone-win>  
 Так же есть платные решения от Сбера/Яндекса/Тинькофф.  
 
 **[B]Коммерческие системы[/B]**
