@@ -31,7 +31,8 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 1\. Делишь оригинальную дорожку на вокал и музыку при помощи Ultimate Vocal Remover:  
 <https://github.com/MaHivka/ultimate-voice-models-FAQ/wiki/UVR>
 
-2\. Преобразуешь дорожку с вокалом к нужному тебе голосу через RVC
+2\. Преобразуешь дорожку с вокалом к нужному тебе голосу через RVC:  
+<https://2ch-ai.gitgud.site/wiki/speech/sts/rvc/rvc/>
 
 3\. Объединяешь дорожки при помощи Audacity или любой другой тулзы для работы с аудио
 
@@ -53,7 +54,8 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 
 Гайд на русском: <https://github.com/MaHivka/ultimate-voice-models-FAQ/wiki/RVC#создание-собственной-модели>  
 Гайд на английском: <https://docs.aihub.wtf/guide-to-create-a-model/model-training-rvc>  
-Определить переобучение через TensorBoard: <https://docs.aihub.wtf/guide-to-create-a-model/tensorboard-rvc>
+Определить переобучение через TensorBoard: <https://docs.aihub.wtf/guide-to-create-a-model/tensorboard-rvc>  
+Если тыква вместо видеокарты, можно тренить в онлайне: https://www.kaggle.com/code/varaslaw/rvc-v2-no-gradio-https-t-me-aisingers-ru/notebook?scriptVersionId=143284909 (инструкция: https://www.youtube .com/watch?v=L-emE1pGUOM )  
 
 **[B]Q: Надо распознать текст с аудио/видео файла[/B]**
 
@@ -63,8 +65,8 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 
 **[B]Коммерческие системы[/B]**
 
-https://elevenlabs.io перевод видео, синтез и преобразование голоса  
-https://heygen.com перевод видео с сохранением оригинального голоса и синхронизацией движения губ на видеопотоке. Так же доступны функции TTS и ещё что-то  
-https://app.suno.ai генератор композиций прямо из текста. Есть отдельный тред на доске  ==>>==
+<https://elevenlabs.io> перевод видео, синтез и преобразование голоса  
+<https://heygen.com> перевод видео с сохранением оригинального голоса и синхронизацией движения губ на видеопотоке. Так же доступны функции TTS и ещё что-то  
+<https://app.suno.ai> генератор композиций прямо из текста. Есть отдельный тред на доске  ==>>==
 
 Шаблон для переката: <https://2ch-ai.gitgud.site/wiki/speech/speech-shapka/>
