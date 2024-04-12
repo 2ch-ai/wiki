@@ -204,8 +204,8 @@ Command R и Command R+ это модели 35B и 104B соответствен
 
 ## Ссылки на модели и гайды
 
-<https://huggingface.co/TheBloke> Основной поставщик квантованных моделей под любой вкус до 1 февраля 2024 года.
-<https://huggingface.co/LoneStriker>, <https://huggingface.co/mradermacher> Новые поставщики квантов на замену почившему TheBloke.
+<https://huggingface.co/TheBloke> Основной поставщик квантованных моделей под любой вкус до 1 февраля 2024 года  
+<https://huggingface.co/LoneStriker>, <https://huggingface.co/mradermacher> Новые поставщики квантов на замену почившему TheBloke  
 <https://rentry.co/TESFT-LLaMa> Не самые свежие гайды на ангельском  
 <https://rentry.co/STAI-Termux> Запуск SillyTavern на телефоне  
 <https://rentry.co/lmg_models> Самый полный список годных моделей  
