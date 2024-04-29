@@ -209,7 +209,7 @@ Command R и Command R+ это модели 35B и 104B соответствен
 <https://rentry.co/TESFT-LLaMa> Не самые свежие гайды на ангельском  
 <https://rentry.co/STAI-Termux> Запуск SillyTavern на телефоне  
 <https://rentry.co/lmg_models> Самый полный список годных моделей  
-<http://ayumi.m8geil.de/ayumi_bench_v3_results.html> Рейтинг моделей для кума со с*порно*й методикой тестирования  
+<https://ayumi.m8geil.de/erp4_chatlogs/> Рейтинг моделей для кума со с*порно*й методикой тестирования  
 <https://rentry.co/llm-training> Гайд по обучению своей лоры  
 <https://rentry.co/2ch-pygma-thread> Шапка треда PygmalionAI, можно найти много интересного  
 <https://colab.research.google.com/drive/11U-bC6AxdmMhd3PF9vWZpLdi6LdfnBQ8?usp=sharing> Последний известный колаб для обладателей отсутствия любых возможностей запустить локально  
