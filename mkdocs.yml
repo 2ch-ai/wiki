@@ -105,4 +105,5 @@ nav:
         - Консольные команды: ./llama/guides/kobold-cpp/kobold-cpp-consolecommands.md
       - Text Generation Webui: ./llama/guides/text-generation-webui.md
       - TavernAI: ./llama/guides/tavern-ai.md
+      - Железо: ./llama/guides/hardware.md
     - Шапка LLaMA-треда: ./llama/llama-shapka.md
