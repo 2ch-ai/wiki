@@ -1,86 +1,7 @@
-<!-- 
-
-    ControlNet: Полное руководство
-        ○ Что такое ControlNet?
-            § Пример обнаружения краев
-            § Пример обнаружения позы человека
-        ○ Установка Stable Diffusion ControlNet
-            § Установка ControlNet в Google Colab
-            § Установка ControlNet на Windows PC или Mac
-                □ Установка расширения ControlNet (Windows/Mac)
-                □ Установка T2I адаптеров
-            § Обновление расширения ControlNet
-                □ Вариант 1: Обновление из Web-UI
-                □ Вариант 2: Командная строка
-        ○ Использование ControlNet - простой пример
-            § Настройки Text-to-Image
-            § Настройки ControlNet
-        ○ Препроцессоры и модели
-            § Выбор правильной модели
-            § OpenPose
-                □ OpenPose
-                □ OpenPose_face
-                □ OpenPose_faceonly
-                □ OpenPose_hand
-                □ OpenPose_full
-                □ dw_openpose_full
-            § Tile resample
-            § Reference
-                □ Reference adain
-                □ Reference only
-                □ Reference adain+attn
-            § Image Prompt adapter (IP-adapter)
-                □ Установка IP-adapter моделей
-                □ Использование IP-adapter
-            § Canny
-            § Depth
-            § Line Art
-                □ Line Art Anime
-                □ Line Art Anime Denoise
-                □ Line Art Realistic
-                □ Line Art Coarse
-            § MLSD
-            § Normal maps
-                □ Normal Midas
-                □ Normal Bae
-            § Scribbles
-                □ Scribble HED
-                □ Scribble Pidinet
-                □ Scribble xDoG
-            § Segmentation
-                □ UniFormer ADE20k (ufade20k)
-                □ OneFormer ADE20k (ofade20k)
-                □ OneFormer COCO (ofcoco)
-            § Shuffle
-            § Color grid T2I adapter
-            § Clip vision style T2I adapter
-            § ControlNet Inpainting
-        ○ Копирование лица с помощью ControlNet
-            § Установка IP-adapter plus face модели
-            § Использование IP-adapter plus face модели
-        ○ Объяснение ВСЕХ настроек ControlNet
-            § Элементы управления вводом
-            § Выбор модели
-            § Control Weight
-            § Control Mode
-            § Resize mode
-        ○ Несколько ControlNet
-        ○ Несколько идей по использованию ControlNet
-            § Копирование позы человека
-                □ Модель OpenPose
-                □ Пример 1: Копирование позы с изображения
-                □ Пример 2: Ремикс сцены из фильма
-            § Стилизация изображений с помощью ControlNet
-            § Использование промптов
-            § Использование моделей
-            § Управление позами с помощью Magic Pose
-            § Идеи дизайна интерьера
-        ○ Разница между моделью глубины Stable Diffusion и ControlNet
-        ○ Как работает ControlNet?
-        ○ Дополнительные материалы -->
-
 !!! info "Первоисточник"
-    Данная статья представляет собой перевод <https://stable-diffusion-art.com/controlnet/> редакции от 16 марта 2024 года.
+    Данная статья представляет собой перевод данного англоязычного руководства редакции от 16 марта 2024 года:
+
+    <https://stable-diffusion-art.com/controlnet/>
 
 ControlNet - это нейросеть, которая контролирует генерацию картинок в Stable Diffusion, добавляя дополнительные условия. Подробности можно найти в статье [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543) от Lvmin Zhang и его коллег.
 
@@ -99,7 +20,7 @@ ControlNet полностью меняет правила игры. С его п
 * Объяснение всех моделей ControlNet.
 * Несколько примеров использования.
 
-Этот гайд - для ControlNet с моделями Stable Diffusion v1.5. Смотри гайд для [ControlNet с SDXL моделями](https://stable-diffusion-art.com/controlnet-sdxl/).
+Этот гайд про ControlNet для Stable Diffusion v1.5. Для [ControlNet с SDXL](https://stable-diffusion-art.com/controlnet-sdxl/) смотри отдельный гайд.
 
 ## Что такое ControlNet?
 
@@ -615,7 +536,9 @@ IP-adapter позволяет использовать изображение в
 ![](https://stable-diffusion-art.com/wp-content/uploads/2023/05/image-112.png){ width=45% }
 
 <figure markdown="span">
-  *Сверху слева - Midas; Сверху справа - Leres; Снизу слева - Leres++; Снизу справа - Zoe*
+  **Сверху слева** - Midas; **Сверху справа** - Leres
+  <br>
+  **Снизу слева** - Leres++; **Снизу справа** - Zoe
 </figure>
 
 Промпт и негативный промпт:
@@ -946,11 +869,11 @@ ControlNet Inpainting - то, что вам нужно.
   Модель Inpaint+lama для удаления объектов. Был использован пустой промпт.
 </figure>
 
-### Копирование лица с помощью ControlNet
+## Копирование лиц с помощью ControlNet
 
 Вы можете использовать специальную модель IP-adapter face для генерации согласованных лиц на нескольких изображениях.
 
-#### Установка модели IP-adapter plus face
+### Установка модели IP-adapter plus face
 
 1. Убедитесь, что ваш [A1111 WebUI](https://stable-diffusion-art.com/automatic1111/) и расширение [ControlNet](https://stable-diffusion-art.com/controlnet/) обновлены.
 
@@ -958,7 +881,7 @@ ControlNet Inpainting - то, что вам нужно.
 
 3. Переименуйте расширение файла с **.bin** на **.pth**. (т.е. имя файла должно быть ip-adapter-plus-face_sd15.pth)
 
-#### Использование модели IP-adapter plus face
+### Использование модели IP-adapter plus face
 
 Чтобы использовать модель IP adapter face для копирования лица, перейдите в раздел ControlNet и загрузите изображение головы.
 
@@ -1183,142 +1106,185 @@ disfigured, deformed, ugly
 * Поиграйся с весами ControlNet, если какой-то из них не делает свою работу.
 * Следи за Resize mode, если размер референсов и финальной картинки не совпадает.
 
-==TODO==
+## Несколько идей для использования ControlNet
+### Копирование позы
+Наверное, самое распространенное применение ControlNet - копирование человеческих поз. Обычно контролировать позы сложно... но теперь это в прошлом! Входным изображением может быть картинка, сгенерированная Stable Diffusion, или фотография с реальной камеры.
 
-<!-- Несколько идей для использования ControlNet
-Копирование человеческих поз
-Наверное, самое распространенное применение ControlNet - копирование человеческих поз. Обычно контролировать позы сложно... но теперь это в прошлом! Входным изображением может быть картинка, сгенерированная Stable Diffusion, или фотка с реальной камеры.
+#### Модель OpenPose
+Чтобы использовать ControlNet для переноса человеческих поз, следуй инструкциям по включению ControlNet в AUTOMATIC1111, описанным выше. Выставь следующие настройки:
 
-Модель OpenPose
-Чтобы использовать ControlNet для переноса человеческих поз, следуй инструкциям по включению ControlNet в AUTOMATIC1111. Выставь следующие настройки:
-
-Preprocessor: openpose
-
-Model: control_…._openpose
-
-Убедись, что галочка Enable стоит.
+* **Enable**: Да
+* **Preprocessor**: openpose
+* **Model**: control_…._openpose
 
 Вот пара примеров.
 
-Пример 1: Копирование позы с картинки
-Для начала давай скопируем позу с этой фотки, где тётка любуется листьями.
+#### Пример 1: Копирование позы с картинки
+Для начала давай скопируем позу с этой фотографии, где девушка любуется листьями.
 
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/v-m.jpg)
 
-Входное изображение
-Используя разные модели и промпты, можно кардинально изменить контент, но сохранить позу.
+Используя различные модели и промпты, можно полностью изменить изображение, но сохранить позу.
 
-Модель Dreamlike Photoreal
-Модель Anything v3
-Модель DreamShaper
-Модель Anything v3
-Пример 2: Ремикс сцены из фильма
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/02002-1194362429-photo-of-a-female-wearing-dress-highlight-in-blonde-hair-outside-restaurant-holding-a-eagle-768x1128.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/07437-4015835577-a-man-in-suit-in-living-room-with-a-colorful-bird-on-his-hand.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/07458-251752375-photo-of-a-beautiful-and-mysterious-mage-detailed-pretty-face-detailed-clothing-fire-on-hand.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/07462-3826108173-photo-of-a-female-highlight-in-hair-outside-city-street-holding-a-dragon-768x1128.png){ width=45% }
+
+<figure markdown="span">
+  **Сверху слева** - Модель Dreamlike Photoreal; **Сверху справа** - Модель Anything v3
+  <br>
+  **Снизу слева** - Модель DreamShaper; **Снизу справа** - Модель Anything v3
+</figure>
+
+#### Пример 2: Ремикс сцены из фильма
+
 Можно переделать культовую танцевальную сцену из "Криминального чтива" в йога-сессию в парке.
 
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/image-171.png)
 
-Тут использован ControlNet с моделью DreamShaper.
+Тут использован ControlNet с моделью [DreamShaper](https://stable-diffusion-art.com/models/#DreamShaper).
+
+**Промпт:**
+```
+photo of women doing yoga, outside in a park.
+```
+
+**Негативный промпт:**
+```
+disfigured, ugly, bad, immature
+```
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00019-1330013789-photo-of-women-doing-yoga-outside-in-a-park.png)
+
+Тот же промпт, что и для [модели Inkpunk Diffusion](https://stable-diffusion-art.com/models/#Inkpunk_Diffusion). (Вам нужно будет добавить в промпт фразу **nvinkpunk**):
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/image-133.png)
+
+### Стилизация изображений с ControlNet
+#### Используя промпт
+Ниже результаты с моделью v1.5, но с разными **промптами** для достижения разных стилей. Использован ControlNet с разными препроцессорами. Лучше всего поэкспериментировать и посмотреть, что работает лучше.
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/07346-1996214137-pixel-art-of-Beethoven.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/07339-178736178-A-3D-rendering-of-Beethoven.png){ width=45% }
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00062-3265423368-A-black-and-white-photo-of-Beethoven.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/watercolor-normal.png){ width=45% }
+
+<figure markdown="span">
+  **Сверху слева** - Pixel Art, Canny; **Сверху справа** - 3D rendering, Canny
+  <br>
+  **Снизу слева** - Black and white, HED; **Снизу справа** - water color, Normal
+</figure>
+
+#### Используя модели
+Можно также использовать [модели](https://stable-diffusion-art.com/models/) для стилизации изображений. Ниже сгенерированы картинки с промптом "Картина Бетховена" на моделях [Anythingv3](https://stable-diffusion-art.com/models/#Anything_V3), [DreamShaper](https://stable-diffusion-art.com/models/#DreamShaper) и [OpenJourney](https://stable-diffusion-art.com/models/#Open_Journey).
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/anythingv3.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/dreamshaper-1.png){ width=45% }
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/07374-2883595273-mdjrny-v4-style-photo-of-Beethoven.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/inkpunk.png){ width=45% }
+
+<figure markdown="span">
+  **Сверху слева** - Anything v3; **Сверху справа** - DreamShaper
+  <br>
+  **Снизу слева** - OpenJourney; **Снизу справа** - Inkpunk Diffusion
+</figure>
+
+### Контроль поз при помощи Magic Pose
+Иногда бывает сложно найти картинку с нужной позой. Можно создать свою позу с помощью таких инструментов, как [Magic Poser](https://webapp.magicposer.com/) ([зачёт](https://www.reddit.com/r/StableDiffusion/comments/112t4fl/controlnet_experiments_from_magic_poser_input/)).
+
+**Шаг 1**: Зайди на сайт [Magic Poser](https://webapp.magicposer.com/).
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/image-136.png){ width=45% }
+
+**Шаг 2**: Подвигай ключевые точки модели, чтобы настроить позу.
+
+**Шаг 3**: Нажми на Preview. Сделай скриншот результата. Должна получиться картинка типа такой:
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/pose2.jpg)
+
+**Шаг 4**: Используй модель OpenPose в ControlNet. Выбери модель и промпт на свой вкус для генерации картинок.
+
+Ниже несколько картинок, сгенерированных на модели 1.5 и DreamShaper. Поза хорошо скопировалась во всех случаях.
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00110-2768298569-beautiful-wearing-fantastic-hand-dyed-cotton-clothes-embellished-beaded-feather-decorative-fringe-knots-colorful-pigtail-sub.png){ width=30% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00113-368104786-modelshoot-style-extremely-detailed-CG-unity-8k-wallpaper-full-shot-body-photo-of-the-most-beautiful-artwork-in-the-world-m.png){ width=30% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00120-2262638220-photorealistic-photo-of-a-handsome-young-male-wizard-white-wizard-shirt-with-golden-trim-white-robe-moving-in-the-wind-long-w.png){ width=30% }
 
 
-Промпт: фото женщин, занимающихся йогой, на улице в парке. Негативный промпт: уродливый, страшный, плохой, незрелый
-А это с тем же промптом, но с моделью Inkpunk Diffusion. (Надо добавить ключевое слово nvinkpunk в промпт)
-
-
-Тот же промпт, что и для модели Inkpunk Diffusion.
-Стилизация изображений с ControlNet
-Используя промпты
-Ниже результаты с моделью v1.5, но с разными промптами для достижения разных стилей. Использован ControlNet с разными препроцессорами. Лучше всего поэкспериментировать и посмотреть, что работает лучше.
-
-Пиксель-арт, Canny
-3D-рендеринг, Canny
-Черно-белый, HED
-Акварель, Normal
-Использование ключевых слов в промпте для стилизации изображения с ControlNet.
-Используя модели
-Можно также использовать модели для стилизации изображений. Ниже сгенерированы картинки с промптом "Картина Бетховена" на моделях Anythingv3, DreamShaper и OpenJourney.
-
-Anything v3
-DreamShaper
-OpenJourney
-Inkpunk Diffusion
-Контроль поз с Magic Pose
-Иногда бывает сложно найти картинку с нужной позой. Можно создать свою позу с помощью таких инструментов, как Magic Poser (зачёт).
-
-Шаг 1: Зайди на сайт Magic Poser.
-
-
-Шаг 2: Подвигай ключевые точки модели, чтобы настроить позу.
-
-Шаг 3: Жми Preview. Сделай скриншот модели. Должна получиться картинка типа такой:
-
-
-Поза человека из Magic Poser.
-Шаг 4: Используй модель OpenPose в ControlNet. Выбери модель и промпт на свой вкус для генерации картинок.
-
-Ниже несколько картинок, сгенерированных на модели 1.5 и DreamShaper. Поза скопировалась норм во всех случаях.
-
-
-
-
-Идеи для дизайна интерьеров
+### Идеи для дизайна интерьеров
 Можно использовать детектор прямых линий MLSD в Stable Diffusion ControlNet для генерации идей дизайна интерьеров. Вот настройки ControlNet:
 
-Preprocessor: mlsd
+* **Preprocessor**: mlsd
+* **Model**: mlsd
 
-Model: mlsd
+Начнём с фотографий готовых интерьеров. Возьмем для примера вот эту:
 
-Начни с любых фоток интерьеров. Возьмем для примера вот эту:
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/living-room-2732939_640.jpg)
 
-
-Входное изображение для дизайна интерьера.
 Промпт:
+```award winning living room```
 
-интерьер гостиной, получивший награду
-
-
-Модель: Stable Diffusion v1.5
+**Модель**: Stable Diffusion v1.5
 
 Вот несколько сгенерированных идей дизайна:
 
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00133-475383634-award-winning-living-room.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00129-1768390595-award-winning-living-room.png){ width=45% }
 
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00130-1768390596-award-winning-living-room.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00128-1768390594-award-winning-living-room.png){ width=45% }
 
+Также можно использовать модель глубины. Вместо прямых линий она будет делать упор на сохранение информации о глубине.
 
-
-Можно также использовать модель глубины. Вместо прямых линий она будет делать упор на сохранение информации о глубине.
-
-Preprocessor: Depth Midas
-
-Model: Depth
+* **Preprocessor**: Depth Midas
+* **Model**: Depth
 
 Сгенерированные картинки:
 
-Разница между моделью глубины Stable Diffusion и ControlNet
-Stability AI, создатели Stable Diffusion, выкатили модель depth-to-image. У нее много общего с ControlNet, но есть и важные различия.
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00135-3607245534-award-winning-living-room.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00136-3607245535-award-winning-living-room.png){ width=45% }
+
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00137-3607245536-award-winning-living-room.png){ width=45% }
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/00138-3607245537-award-winning-living-room.png){ width=45% }
+
+## Разница между моделью глубины Stable Diffusion и ControlNet
+!!! quote "Примечание от переводчика"
+    Модель depth-to-image работает только с Stable Diffusion 2, которая не получила широкого распространения. Так что ценность информации из данного раздела сомнительна.
+
+Stability AI, создатели Stable Diffusion, выпустили модель [depth-to-image](https://stable-diffusion-art.com/depth-to-image/). У нее много общего с ControlNet, но есть и важные различия.
 
 Давай сначала о том, что похоже.
 
-Обе модели - это модели Stable Diffusion...
-Обе используют два кондишена (препроцессированную картинку и текстовый промпт).
-Обе юзают MiDAS для оценки карты глубины.
+1. Обе модели - это модели Stable Diffusion...
+2. Обе используют два [conditions](https://stable-diffusion-art.com/how-stable-diffusion-work/#Conditioning) (результат работы препроцессора для картинки и текстовый промпт).
+3. Обе используют [MiDAS](https://github.com/isl-org/MiDaS) для оценки карты глубины.
+
 А вот различия:
 
-Модель depth-to-image - это v2 модель. ControlNet можно использовать с любыми v1 или v2 моделями. Это прям ваще важно, потому что v2 модели, как известно, сложные в использовании. Люди туго втыкают, как на них генерить норм картинки. То, что ControlNet может юзать любую v1 модель, не только открыло conditioning по глубине для базовой модели v1.5, но и для тысяч специальных моделей, которые комьюнити навыпускало.
-ControlNet более универсальный. Помимо глубины, он может кондишенить по границам, позам и всё такое.
-У ControlNet карта глубины более высокого разрешения, чем у depth-to-image.
-Как работает ControlNet?
-Туториал будет неполным без объяснения, как ControlNet работает под капотом.
+1. Модель depth-to-image - это v2 модель. **ControlNet можно использовать с любыми v1 или v2 моделями**. Это важный момент, поскольку v2 модели, как известно, сложнее в использовании. Людям сложно генерировать на них хорошие картинки. То, что ControlNet может использовать **любую** v1 модель, открыло возможность делать conditioning по глубине не только для [базовой модели v1.5](https://stable-diffusion-art.com/models/#Stable_diffusion_v15), но и для тысяч специализированных моделей, выпущенных сообществом.
+2. ControlNet более универсальный. Помимо глубины, он может делать условия по границам, позам и всё такое.
+3. У ControlNet карта глубины более высокого разрешения, чем у depth-to-image.
 
-ControlNet прикрепляет обучаемые сетевые модули к различным частям U-Net (предиктора шума) модели Stable Diffusion. Веса модели Stable Diffusion залочены, чтобы они не менялись во время обучения. Только прикрепленные модули меняются в процессе тренировки.
+## Как работает ControlNet?
+Статья будет неполной без объяснения, как ControlNet работает под капотом.
 
-Диаграмма модели из научной статьи хорошо это иллюстрирует. Изначально веса прикрепленного сетевого модуля равны нулю, что позволяет новой модели использовать преимущества обученной и залоченной модели.
+ControlNet "прикрепляет" обучаемые сетевые модули к различным частям [U-Net](https://stable-diffusion-art.com/how-stable-diffusion-work/#Feeding_embeddings_to_noise_predictor) (предсказателя шума) модели Stable Diffusion. Веса модели Stable Diffusion заблокированы, чтобы они не менялись во время обучения. Только прикрепленные модули меняются в процессе тренировки.
 
+Диаграмма модели из [научной статьи](https://arxiv.org/abs/2302.05543) хорошо это иллюстрирует. Изначально веса прикрепленного сетевого модуля равны нулю, что позволяет новой модели использовать преимущества обученной и заблокированной модели.
 
-Во время обучения вместе с каждой тренировочной картинкой подаются два кондишена. (1) Текстовый промпт и (2) карта контроля, типа ключевых точек OpenPose или границ Canny. ControlNet учится генерить картинки на основе этих двух входов.
+![](https://stable-diffusion-art.com/wp-content/uploads/2023/02/image-139.png)
 
-Каждый метод контроля обучается независимо.
+Во время обучения вместе с каждой тренировочной картинкой подаются [два condition](https://stable-diffusion-art.com/how-stable-diffusion-work/#Conditioning)'а. (1) Текстовый промпт и (2) **карта управления (control map)**, типа ключевых точек OpenPose или границ Canny. ControlNet учится генерировать картинки на основе этих двух входных данных.
 
-Почитать еще
-Картинки, сгенеренные с Magic Poser и OpenPose.
-Научная статья: Adding Conditional Control to Text-to-Image Diffusion Models (10 февраля 2023)
-Страница ControlNet v1.0 на Github
-Файлы моделей ControlNet v1.1 (HuggingFace)
-Страница ControlNet v1.1 на Github
-Расширение ControlNet для AUTOMATIC1111 Web-UI -->
+Каждая ControlNet-модель обучается независимо.
+
+## Почитать еще
+* [Картинки](https://www.reddit.com/r/StableDiffusion/comments/112t4fl/controlnet_experiments_from_magic_poser_input/), сгенерированные при помощи Magic Poser и OpenPose.
+* Научная статья: [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543) (10 февраля 2023)
+* [ControlNet v1.0 на Github](https://github.com/lllyasviel/ControlNet)
+* [ControlNet v1.1 Файлы моделей (HuggingFace)](https://huggingface.co/lllyasviel/ControlNet-v1-1)
+* [ControlNet v1.1 на Github](https://github.com/lllyasviel/ControlNet-v1-1-nightly)
+* [ControlNet расширение для AUTOMATIC1111 Web-UI](https://github.com/Mikubill/sd-webui-controlnet)
