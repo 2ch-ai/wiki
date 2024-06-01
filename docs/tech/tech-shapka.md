@@ -62,8 +62,7 @@ YOLO-модели (You Only Look Once) могут быть обучены для
 
 ﹡Текстуальная инверсия: [https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/sd_textual_inversion_training.ipynb](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/sd_textual_inversion_training.ipynb)  
 ﹡Dreambooth: [https://colab.research.google.com/github/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb](https://colab.research.google.com/github/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb)  
-﹡LoRA  [1] [https://colab.research.google.com/github/Linaqruf/kohya-trainer/blob/main/kohya-trainer.ipynb](https://colab.research.google.com/github/Linaqruf/kohya-trainer/blob/main/kohya-trainer.ipynb)  
-﹡LoRA  [2] [https://colab.research.google.com/drive/1bFX0pZczeApeFadrz1AdOb5TDdet2U0Z](https://colab.research.google.com/drive/1bFX0pZczeApeFadrz1AdOb5TDdet2U0Z)
+﹡LoRA  <https://colab.research.google.com/github/hollowstrawberry/kohya-colab/blob/main/Lora_Trainer.ipynb>
 
 [B]**➤ Полезное**[/B]
 
