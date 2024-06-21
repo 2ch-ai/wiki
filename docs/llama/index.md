@@ -259,3 +259,7 @@ Command R и Command R+ это модели 35B и 104B соответствен
 <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard> Сравнение моделей по (часто дутым) метрикам ([почитать характерное обсуждение](https://huggingface.co/CausalLM/34b-beta/discussions/5))  
 <https://chat.lmsys.org/?leaderboard> Сравнение моделей на "арене" реальными пользователями. Более честное, чем выше, но всё равно сравниваются зирошоты  
 <https://colab.research.google.com/drive/11U-bC6AxdmMhd3PF9vWZpLdi6LdfnBQ8?usp=sharing> Последний известный колаб для обладателей отсутствия любых возможностей запустить локально  
+
+### Факультатив
+
+<https://rentry.co/Jarted> Почитать, как ~~трансгендеры~~ пидарасы пытаются пиздить код белых господинов, но обсираются и получают заслуженную порцию мочи
