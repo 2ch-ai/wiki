@@ -258,6 +258,7 @@ Command R и Command R+ это модели 35B и 104B соответствен
 <https://rentry.co/2ch-pygma-thread> Шапка треда PygmalionAI, можно найти много интересного  
 <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard> Сравнение моделей по (часто дутым) метрикам ([почитать характерное обсуждение](https://huggingface.co/CausalLM/34b-beta/discussions/5))  
 <https://chat.lmsys.org/?leaderboard> Сравнение моделей на "арене" реальными пользователями. Более честное, чем выше, но всё равно сравниваются зирошоты  
+<https://huggingface.co/Virt-io/SillyTavern-Presets> Пресеты для таверны для ролеплея  
 <https://colab.research.google.com/drive/11U-bC6AxdmMhd3PF9vWZpLdi6LdfnBQ8?usp=sharing> Последний известный колаб для обладателей отсутствия любых возможностей запустить локально  
 
 ### Факультатив
