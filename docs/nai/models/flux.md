@@ -34,10 +34,10 @@ Flux был выпущен 1 августа 2024 года компанией Bla
 
 ## Запустить в онлайне
 
-**FLUX.1 [schnell]**  
+### FLUX.1 [schnell]
 <https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell>
 
-**FLUX.1 [dev]**  
+### FLUX.1 [dev]
 <https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev>
 
 ## Тренировка лор
@@ -54,6 +54,7 @@ Flux был выпущен 1 августа 2024 года компанией Bla
 Недостатком Joy Caption является слабое восприятие NSFW-концептов.
 
 Интерфейсы для joy-caption:  
+
 - joy-caption-pre-alpha: <https://huggingface.co/spaces/fancyfeast/joy-caption-pre-alpha>  
 - joy-caption-batch: <https://github.com/MNeMoNiCuZ/joy-caption-batch>  
 - taggui: <https://github.com/doloreshaze337/taggui>  

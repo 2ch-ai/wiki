@@ -24,8 +24,8 @@
 - [Лоры и дополнительная информация с форча](https://rentry.org/ponyxl_loras_n_stuff)
 
 ## ControlNet-модели
-- Anytest v1: [https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet](https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet)  
-- Anytest v2: [https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet2](https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet2)
+- [Anytest v1](https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet)
+- [Anytest v2](https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet2)
 
 ## Особенности написания промптов
 ### Теги качества
