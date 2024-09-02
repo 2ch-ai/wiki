@@ -72,6 +72,7 @@ nav:
     - Модели:
       - Flux: ./nai/models/flux.md
       - Pony Diffusion V6 XL: ./nai/models/pony-diffusion-v6-xl.md
+      - NovelAI v1: ./nai/models/nai-v1.md
     - ControlNet:
       - Полное руководство по ControlNet: ./nai/controlnet/controlnet-complete-guide.md
     - LoRA:

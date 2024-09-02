@@ -1,0 +1,28 @@
+[NovelAI](https://novelai.net/) - это подписочный онлайн-сервис, который который позволяет генерировать истории и изображения при помощи набора разработанных командой данного сервиса нейросетей.
+
+В октябре 2022 года, когда NovelAI только запустили сервис для генерации изображений в стиле аниме, веса их модели практически сразу же ~~были опубликованы~~ утекли в публичный доступ, благодаря чему кто-угодно мог начать генерировать изображения локально, без какой-либо платы.
+
+Это первый попавший в публичный доступ чекпоинт, специальностью которого была генерация аниме. Данный чекпоинт является файнтьюном модели [Stable Diffusion 1.4](https://huggingface.co/CompVis/stable-diffusion-v1-4).
+
+Летом 2024 года (почти спустя два года после утечки) NovelAI выпустили свою модель в публичный доступ [официально](https://x.com/novelaiofficial/status/1826696239154692491), так что никому больше не нужно переживать за правовой статус использования данного чекпоинта.
+
+Скачать веса можно здесь:  
+- **Официальный релиз лета 2024**: <https://huggingface.co/NovelAI/nai-anime-v1-full>  
+- **Слив октября 2022 (торрент)**: [Magnet link](magnet:?xt=urn:btih:5bde442da86265b670a3e5ea3163afad2c6f8ecc&dn=novelaileak)  
+
+### Основанные на NovelAI v1 модели
+[[SD1 аниме-чекпоинты на цивите]](https://civitai.com/search/models?baseModel=SD%201.5&baseModel=SD%201.4&modelType=Checkpoint&tags=anime&sortBy=models_v9)
+
+С момента слива было выпущено огромное количество основанных на NAI мёрджей и файнтьюнов, большая часть из них может быть найдена на цивите.
+
+Подавляющее большинство SD1 чекпоинтов для генерации аниме в той или иной степени основано на утечке NAI.
+
+Саму модель NAI сейчас напрямую никто не использует, разве что в качестве базовой модели для обучения своих собственных лор и моделей.
+
+### Где взять лоры
+- [Лоры на civitai](https://civitai.com/search/models?baseModel=SD%201.5&modelType=LORA&tags=anime&sortBy=models_v9)  
+- [Лоры и дополнительная информация с форча](https://gitgud.io/badhands/makesomefuckingporn)  
+
+### ControlNet-модели
+- ControlNet 1.1: [https://civitai.com/models/38784](https://civitai.com/models/38784)  
+- QR Code Monster: [https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster](https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster)
