@@ -69,6 +69,8 @@ nav:
     - 2ch NAI guide: ./nai/2ch_nai_guide.md
     - Глоссарий:
       - VAE & Latent Space: ./nai/terms/vae.md
+    - Модели:
+      - Flux: ./nai/models/flux.md
     - ControlNet:
       - Полное руководство по ControlNet: ./nai/controlnet/controlnet-complete-guide.md
     - LoRA:
