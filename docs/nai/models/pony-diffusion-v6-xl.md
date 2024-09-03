@@ -1,6 +1,6 @@
 [[Скачать на CivitAI]](https://civitai.com/models/257749/pony-diffusion-v6-xl)
 
-**Pony Diffusion V6 XL** (так же известный как Pony Diffusion или PonyXL) является самым популярным файнтьюном Stable Diffusion XL.
+**Pony Diffusion V6 XL** (так же известный как Pony Diffusion или PonyXL) является самым популярным файнтьюном [Stable Diffusion XL](./stable-diffusion-xl.md).
 
 Несмотря на название, эта модель умеет генерировать не только поней, но и аниме. Данная модель получила большую популярность в связи с тем, что умеет генерировать сложные позы и NSFW концепты с малым числом проблем в анатомии (в сравнении с другими чекпоинтами).
 

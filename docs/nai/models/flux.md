@@ -78,8 +78,9 @@ Flux был выпущен 1 августа 2024 года компанией Bla
 Поддержка flux доступна в основной ветке. Также в репозитории есть [инструкция по обучению](https://github.com/bghira/SimpleTuner/blob/main/documentation/quickstart/FLUX.md).
 ## Особенности лицензирования
 Модели **dev** и **schnell** распространяются под разными лицензиями:  
- - **schnell** распространяется под лицензией Apache 2, что позволяет использовать модель и её производные без ограничений  
- - **dev** распространяется под [Non-Commercial Use Only лицензией](https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md), что будет требовать выплат роялти и прочих комиссий в случае, если кто-то захочет коммерциализировать использование модели dev или её производных  
+
+- **schnell** распространяется под лицензией Apache 2, что позволяет использовать модель и её производные без ограничений  
+- **dev** распространяется под [Non-Commercial Use Only лицензией](https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md), что будет требовать выплат роялти и прочих комиссий в случае, если кто-то захочет коммерциализировать использование модели dev или её производных  
 
 !!! quote "Ключевой пункт лицензии **FLUX.1 [dev]**"
     Non-Commercial Use Only. You may only access, use, Distribute, or creative Derivatives of or the FLUX.1 [dev] Model or Derivatives for Non-Commercial Purposes.

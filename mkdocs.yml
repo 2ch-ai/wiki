@@ -72,6 +72,7 @@ nav:
     - Модели:
       - Flux: ./nai/models/flux.md
       - Pony Diffusion V6 XL: ./nai/models/pony-diffusion-v6-xl.md
+      - Stable Diffusion XL: ./nai/models/stable-diffusion-xl.md
       - EasyFluff + hll: ./nai/models/easy-fluff.md
       - NovelAI V1: ./nai/models/nai-v1.md
     - ControlNet:
