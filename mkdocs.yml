@@ -14,7 +14,6 @@ theme:
     - content.code.copy
     - content.tooltips
     - navigation.tabs
-    - navigation.expand
     - search.suggest
     - search.highlight
     - search.share
@@ -65,23 +64,38 @@ markdown_extensions:
 
 nav:
   - /nai/:
-    - FAQ: ./nai/nai-faq.md
-    - 2ch NAI guide: ./nai/2ch_nai_guide.md
-    - Глоссарий:
-      - VAE & Latent Space: ./nai/terms/vae.md
+    - FAQ (устарел): './nai/nai-faq.md'
+    - Ставим локально:
+      - NVidia: https://rentry.co/2ch_nai_guide
+      - AMD: https://rentry.co/SD-amd-gpu
+    - Интерфейсы:
+      - AUTOMATIC1111: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+      - Forge: https://github.com/lllyasviel/stable-diffusion-webui-forge
+      - reForge: https://github.com/Panchovix/stable-diffusion-webui-reForge
+      - ComfyUI: https://github.com/comfyanonymous/ComfyUI
+      - Fooocus: https://github.com/lllyasviel/Fooocus
     - Модели:
-      - Flux: ./nai/models/flux.md
-      - Pony Diffusion V6 XL: ./nai/models/pony-diffusion-v6-xl.md
-      - Stable Diffusion XL: ./nai/models/stable-diffusion-xl.md
-      - EasyFluff + hll: ./nai/models/easy-fluff.md
-      - NovelAI V1: ./nai/models/nai-v1.md
+      - 'Flux': ./nai/models/flux.md
+      - '[SDXL] Pony Diffusion V6 XL': ./nai/models/pony-diffusion-v6-xl.md
+      - '[SDXL] Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
+      - '[SD1] EasyFluff + HLL': ./nai/models/easy-fluff.md
+      - '[SD1] NovelAI V1': ./nai/models/nai-v1.md
     - ControlNet:
-      - Полное руководство по ControlNet: ./nai/controlnet/controlnet-complete-guide.md
-    - LoRA:
-      - 2chAI easy LORA guide: ./nai/lora/2chAI_easy_LORA_guide.md
-      - 2chAI hard LORA guide: ./nai/lora/2chAI_hard_LoRA_guide.md
+      - 'Что такое ControlNet?': ./nai/controlnet/controlnet-complete-guide.md
+      - '[SDXL] Anytest v1': https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet
+      - '[SDXL] Anytest v2': https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet2
+      - '[SDXL] Mistoline': https://civitai.com/models/441432/mistoline
+      - '[SDXL] kataragi': https://huggingface.co/kataragi
+      - '[SD1] ControlNet v1.1': https://civitai.com/models/38784
+      - '[SD1] QR Code Monster': https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster
+    - Обучение LoRA:
+      - 2chAI easy LORA guide: https://rentry.co/waavd
+      - 2chAI hard LORA guide: https://rentry.co/2chAI_hard_LoRA_guide
       - Старый гайд по обучению: ./nai/lora/2chAI_LoRA_Dreambooth_guide_old.md
-    - Шапка NAI-треда: ./nai/nai-shapka.md
+    - Дополнительно:
+      - VAE & Latent Space: ./nai/terms/vae.md
+    - Шапка NAI-треда: https://rentry.co/nwhci
+
   - /tech/:
     - Шапка технотреда: ./tech/tech-shapka.md
     - Lycoris: ./tech/lycoris.md
@@ -89,6 +103,7 @@ nav:
     - Обучение YOLO: ./tech/yolo.md
     - Legacy ссылки: ./tech/legacy.md
     - Архивы тредов: ./tech/old_threads.md
+
   - /speech/:
     - Общее: ./speech/index.md
     - Text To Speech:
@@ -105,6 +120,7 @@ nav:
         - Общее: ./speech/sts/svc/svc.md
         - Использование SVC: ./speech/sts/svc/svc-usage.md
     - Шапка голосового треда: ./speech/speech-shapka.md
+
   - /llama/:
     - Общее: ./llama/index.md
     - Гайды:

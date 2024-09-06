@@ -1,3 +1,5 @@
+# FLUX
+
 [[Официальный анонс]](https://blog.fal.ai/flux-the-largest-open-sourced-text2img-model-now-available-on-fal/)
 
 Flux был выпущен 1 августа 2024 года компанией Black Forest Labs.

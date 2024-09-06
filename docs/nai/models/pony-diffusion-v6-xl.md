@@ -1,3 +1,5 @@
+# Pony Diffusion V6 XL
+
 [[Скачать на CivitAI]](https://civitai.com/models/257749/pony-diffusion-v6-xl)
 
 **Pony Diffusion V6 XL** (так же известный как Pony Diffusion или PonyXL) является самым популярным файнтьюном [Stable Diffusion XL](./stable-diffusion-xl.md).

@@ -1,3 +1,5 @@
+# Stable Diffusion XL
+
 !!! info "Pony Diffusion v6 XL"
     PonyDiffusion имеет несколько своих нюансов, ему посвящена [отдельная статья](./pony-diffusion-v6-xl.md) в вики.
 
