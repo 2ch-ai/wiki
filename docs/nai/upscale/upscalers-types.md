@@ -48,11 +48,13 @@
     ---
 
     **Nearest**
+
     ![](https://files.catbox.moe/adozji.png)
 
     ---
 
     **Lanczos**
+
     ![](https://files.catbox.moe/nxbsmr.png)
 
 ### Латентные апскейлеры
