@@ -80,10 +80,7 @@ nav:
       - '[SDXL] Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
       - '[SD1] EasyFluff + HLL': ./nai/models/easy-fluff.md
       - '[SD1] NovelAI V1': ./nai/models/nai-v1.md
-    - Апскейл:
-      - Главная: ./nai/upscale/index.md
-      - Виды апскейлеров: ./nai/upscale/upscalers-types.md
-      - Нейросетевые апскейлеры: ./nai/upscale/neural-upscalers.md
+    - Апскейл: ./nai/upscale.md
     - ControlNet:
       - 'Что такое ControlNet?': ./nai/controlnet/controlnet-complete-guide.md
       - '[SDXL] Anytest v1': https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet
