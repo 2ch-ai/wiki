@@ -93,8 +93,7 @@ nav:
       - 2chAI easy LORA guide: https://rentry.co/waavd
       - 2chAI hard LORA guide: https://rentry.co/2chAI_hard_LoRA_guide
       - Старый гайд по обучению: ./nai/lora/2chAI_LoRA_Dreambooth_guide_old.md
-    - Дополнительно:
-      - VAE & Latent Space: ./nai/terms/vae.md
+    - VAE: ./nai/vae.md
     - Шапка NAI-треда: https://rentry.co/nwhci
 
   - /tech/:
