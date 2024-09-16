@@ -1,19 +1,17 @@
 # FLUX
 
-[[Официальный анонс]](https://blog.fal.ai/flux-the-largest-open-sourced-text2img-model-now-available-on-fal/)
+**Flux** - серия базовых моделей, выпущенная 1 августа 2024 года компанией Black Forest Labs.
 
-Flux был выпущен 1 августа 2024 года компанией Black Forest Labs.
-
-Данный стартап основан бывшими сотрудниками Stability AI, которые раньше работали над Stable Diffusion.
+**Black Forest Labs** - стартап, основанный бывшими сотрудниками Stability AI, которые раньше работали над Stable Diffusion.
 
 ## Базовые модели
 Было анонсировано три модели, веса для двух из них были выложены в паблик.
 
-| Модель               | Веса                                                                   |
-| -------------------- | ---------------------------------------------------------------------- |
-| **FLUX.1 [dev]**     | [Huggingface](https://huggingface.co/black-forest-labs/FLUX.1-dev)     |
-| **FLUX.1 [schnell]** | [Huggingface](https://huggingface.co/black-forest-labs/FLUX.1-schnell) |
-| **FLUX.1 [pro]**     | Недоступны                                                             |
+| Модель               | Оригинальные веса                                                      | Квантованные веса                                                              |
+| -------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **FLUX.1 [dev]**     | [Huggingface](https://huggingface.co/black-forest-labs/FLUX.1-dev)     | [Huggingface](https://huggingface.co/lllyasviel/FLUX.1-dev-gguf/tree/main)     |
+| **FLUX.1 [schnell]** | [Huggingface](https://huggingface.co/black-forest-labs/FLUX.1-schnell) | [Huggingface](https://huggingface.co/lllyasviel/FLUX.1-schnell-gguf/tree/main) |
+| **FLUX.1 [pro]**     | Недоступны                                                             | Недоступны                                                                     |
 
 Модель **pro** доступна только в онлайне по подписочной системе.
 
