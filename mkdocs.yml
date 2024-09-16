@@ -68,12 +68,7 @@ nav:
     - Ставим локально:
       - NVidia: https://rentry.co/2ch_nai_guide
       - AMD: https://rentry.co/SD-amd-gpu
-    - Интерфейсы:
-      - AUTOMATIC1111: https://github.com/AUTOMATIC1111/stable-diffusion-webui
-      - Forge: https://github.com/lllyasviel/stable-diffusion-webui-forge
-      - reForge: https://github.com/Panchovix/stable-diffusion-webui-reForge
-      - ComfyUI: https://github.com/comfyanonymous/ComfyUI
-      - Fooocus: https://github.com/lllyasviel/Fooocus
+    - Интерфейсы: './nai/interfaces.md'
     - Модели:
       - 'Flux': ./nai/models/flux.md
       - '[SDXL] Pony Diffusion V6 XL': ./nai/models/pony-diffusion-v6-xl.md
