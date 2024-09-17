@@ -22,9 +22,15 @@ ControlNet использует уже обученные слои больши�
 * [Anytest 1](https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet)
 * [Anytest 2](https://huggingface.co/2vXpSwA7/iroiro-lora/tree/main/test_controlnet2)
 * [MistoLine](https://civitai.com/models/441432/mistoline)
+* [Union SDXL 1.0](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 * [kataragi](https://huggingface.co/kataragi)
 
-С [PonyDiffusion v6 XL](../models/pony-diffusion-v6-xl.md) и её производными хорошо совместимы только модели Anytest, отмеченные символом p (cnlllite-anytest_**P**...) и pn (CN-anytest_v3-..._**pn**_...).
+С [PonyDiffusion v6 XL](../models/pony-diffusion-v6-xl.md) совместимы следующие модели:
+
+* Anytest, отмеченные символами `p` (cnlllite-anytest_**P**...) и `pn` (CN-anytest_v3-..._**pn**_...).
+* Union SDXL 1.0
+
+Совместимые с Animagine модели из коллекции Anytest отмечены символами `a` и `an`.
 
 #### Stable Diffusion 1
 * [ControlNet 1.1](https://civitai.com/models/38784)

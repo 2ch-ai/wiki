@@ -76,7 +76,7 @@ nav:
       - '[SDXL] Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
       - '[SD1] EasyFluff + HLL': ./nai/models/easy-fluff.md
       - '[SD1] NovelAI V1': ./nai/models/nai-v1.md
-    - Промпты: ./nai/prompt.md
+    - Промпты: ./nai/prompts.md
     - Апскейл: ./nai/upscale.md
     - LoRA:
       - Главная: ./nai/lora/index.md
