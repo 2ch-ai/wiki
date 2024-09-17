@@ -65,9 +65,10 @@ markdown_extensions:
 nav:
   - /nai/:
     - FAQ (устарел): './nai/nai-faq.md'
-    - Ставим локально:
+    - Установка:
       - NVidia: https://rentry.co/2ch_nai_guide
       - AMD: https://rentry.co/SD-amd-gpu
+      - Облака: ./nai/install/clouds.md
     - Интерфейсы: './nai/interfaces.md'
     - Модели:
       - 'Flux': ./nai/models/flux.md
