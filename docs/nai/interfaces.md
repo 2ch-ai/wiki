@@ -1,5 +1,6 @@
 ## AUTOMATIC1111
 * [Github](https://github.com/AUTOMATIC1111/stable-diffusion-webui)  
+* [Официальная вики](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features)
 * [Полезные расширения](https://rentry.co/sd_automatic_extensions)
 
 Самый старый и наиболее популярный интерфейс для картинко-генеративных нейросетей. Стабильный, но медленнее всех внедряет новые фичи.
