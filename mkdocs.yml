@@ -64,28 +64,28 @@ markdown_extensions:
 
 nav:
   - /nai/:
-    - FAQ (устарел): './nai/nai-faq.md'
+    - FAQ (устарел): ./nai/nai-faq.md
     - Установка:
       - NVidia: https://rentry.co/2ch_nai_guide
       - AMD: https://rentry.co/SD-amd-gpu
       - Облака: ./nai/install/clouds.md
-    - Интерфейсы: './nai/interfaces.md'
+    - Интерфейсы: ./nai/interfaces.md
     - Модели:
       - 'Flux': ./nai/models/flux.md
       - '[SDXL] Pony Diffusion V6 XL': ./nai/models/pony-diffusion-v6-xl.md
       - '[SDXL] Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
       - '[SD1] EasyFluff + HLL': ./nai/models/easy-fluff.md
       - '[SD1] NovelAI V1': ./nai/models/nai-v1.md
-    - Апскейл: ./nai/upscale.md
     - Промпты: ./nai/prompt.md
-    - ControlNet:
-      - Главная: ./nai/controlnet/index.md
-      - 'ControlNet: A Complete Guide': ./nai/controlnet/controlnet-complete-guide.md
+    - Апскейл: ./nai/upscale.md
     - LoRA:
       - Главная: ./nai/lora/index.md
       - 2chAI easy LORA guide: https://rentry.co/waavd
       - 2chAI hard LORA guide: https://rentry.co/2chAI_hard_LoRA_guide
       - Старый гайд по обучению: ./nai/lora/2chAI_LoRA_Dreambooth_guide_old.md
+    - ControlNet:
+      - Главная: ./nai/controlnet/index.md
+      - 'ControlNet: A Complete Guide': ./nai/controlnet/controlnet-complete-guide.md
     - VAE: ./nai/vae.md
     - Шапка NAI-треда: https://rentry.co/nwhci
 
