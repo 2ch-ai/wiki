@@ -15,8 +15,8 @@
 
 ## Гайды по составлению промптов
 
-* <https://stable-diffusion-art.com/prompt-guide> - основная инфа по составлению промптов
-* <https://civitai.com/articles/983/insights-for-intermediates-how-to-craft-the-images-you-want-with-a1111> - гайд по составлению промптов для продвинутых
+* <https://stable-diffusion-art.com/prompt-guide>
+* <https://civitai.com/articles/983/insights-for-intermediates-how-to-craft-the-images-you-want-with-a1111>
 
 ## Диалекты 
 !!! tip "Не забывай смотреть на рекомендации к составлению промптов для своей модели"
