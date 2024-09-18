@@ -64,7 +64,7 @@ markdown_extensions:
 
 nav:
   - /nai/:
-    - FAQ (устарел): ./nai/nai-faq.md
+    - Главная: ./nai/index.md
     - Установка:
       - NVidia: https://rentry.co/2ch_nai_guide
       - AMD: ./nai/install/amd.md
