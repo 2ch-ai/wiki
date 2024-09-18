@@ -67,11 +67,12 @@ nav:
     - FAQ (устарел): ./nai/nai-faq.md
     - Установка:
       - NVidia: https://rentry.co/2ch_nai_guide
-      - AMD: https://rentry.co/SD-amd-gpu
+      - AMD: ./nai/install/amd.md
       - Облака: ./nai/install/clouds.md
     - Интерфейсы: ./nai/interfaces.md
     - Модели:
-      - 'Flux': ./nai/models/flux.md
+      - Главная: ./nai/models/index.md
+      - Flux: ./nai/models/flux.md
       - '[SDXL] Pony Diffusion V6 XL': ./nai/models/pony-diffusion-v6-xl.md
       - '[SDXL] Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
       - '[SD1] EasyFluff + HLL': ./nai/models/easy-fluff.md
