@@ -16,7 +16,7 @@ title: Облачная генерация
 ??? info "За что дают валюту на civitai.com"
     ![](https://files.catbox.moe/1y45t0.png)
 
-На отдельных сервисах есть цензура в отношении того, что вы можете запрашивать в промпте.
+На [civitai.com](https://civitai.com) присутствует цензура, блокирующая определённые запросы. Со списом запрещённых на CivitAI слов можешь ознакомиться [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist.json) и [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist-nsfw.json).
 
 ## Google Colab
 [Официальный блокнот для Foocus](https://colab.research.google.com/github/lllyasviel/Fooocus/blob/main/fooocus_colab.ipynb)
