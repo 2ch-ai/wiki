@@ -62,7 +62,7 @@ title: 2ch /nai/ вики
 
 #### Как генерировать в облаке?
 
-Самый простой вариант - это генерировать картинки на [civitai.com](https://civitai.com):
+Самый простой вариант - это использовать онлайн-сервис [civitai.com](https://civitai.com):
 
 1. Регистрируешься на цивите, используя любую фейковую почту, например <https://10minemail.com>  
 1. Открываешь на цивите любую картинку, которая тебе понравилась, [например эту](https://civitai.com/images/6339637)   
@@ -76,7 +76,7 @@ title: 2ch /nai/ вики
 
 На цивите присутствует цензура, блокирующая определённые запросы. Со списом запрещённых слов можешь ознакомиться [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist.json) и [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist-nsfw.json).
 
-Список прочих сервисов гля генерации в облаке описан в [этой статье](./install/clouds.md).
+Список прочих сервисов для генерации в облаке описан в [этой статье](./install/clouds.md).
 
 ---
 
