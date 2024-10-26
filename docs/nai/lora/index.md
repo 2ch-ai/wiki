@@ -18,6 +18,7 @@ title: LoRA
 ### Где взять лоры
 
 * <https://civitai.com> - самая крупная база данных лор. Большинство обученных лор выкладывается именно здесь
+* [Лоры с форча для Illustrious-XL](https://rentry.org/illustrious_loras_n_stuff)
 * [Лоры с форча для PonyDiffusion v6 XL](https://rentry.org/ponyxl_loras_n_stuff#list-of-ponyxl-loras-from-h)
 * [Лоры с форча для NovelAI v1](https://gitgud.io/badhands/makesomefuckingporn#lora-list)
 
