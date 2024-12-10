@@ -93,6 +93,7 @@ nav:
   - /tech/:
     - Шапка технотреда: ./tech/tech-shapka.md
     - Lycoris: ./tech/lycoris.md
+    - Оптимайзеры: ./tech/optimizers.md
     - Обучение SDXL: ./tech/sdxl.md
     - Обучение YOLO: ./tech/yolo.md
     - Legacy ссылки: ./tech/legacy.md
