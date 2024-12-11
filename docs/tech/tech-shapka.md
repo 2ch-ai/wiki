@@ -20,15 +20,24 @@
 Набор скриптов для тренировки, используется под капотом в большей части готовых GUI и прочих скриптах.  
 Для удобства запуска можно использовать дополнительные скрипты в целях передачи параметров, например: [https://rentry.org/simple_kohya_ss](https://rentry.org/simple_kohya_ss)
 
+[https://github.com/bghira/SimpleTuner](https://github.com/bghira/SimpleTuner)
+Линукс онли, бэк отличается от сд-скриптс
+
+[https://github.com/Nerogar/OneTrainer](https://github.com/Nerogar/OneTrainer)
+Фич меньше, чем в сд-скриптс, бэк тоже свой
+
 [B]**➤ GUI-обёртки для sd-scripts**[/B]
 
 [https://github.com/bmaltais/kohya_ss](https://github.com/bmaltais/kohya_ss)  
-[https://github.com/derrian-distro/LoRA_Easy_Training_Scripts](https://github.com/derrian-distro/LoRA_Easy_Training_Scripts)  
-[https://github.com/anon-1337/LoRA-train-GUI](https://github.com/anon-1337/LoRA-train-GUI)  
+[https://github.com/derrian-distro/LoRA_Easy_Training_Scripts](https://github.com/derrian-distro/LoRA_Easy_Training_Scripts)    
 
 [B]**➤ Обучение SDXL**[/B]
 
 [https://2ch-ai.gitgud.site/wiki/tech/sdxl/](https://2ch-ai.gitgud.site/wiki/tech/sdxl/)
+
+[B]**➤ Flux**[/B]
+
+[https://2ch-ai.gitgud.site/wiki/nai/models/flux/](https://2ch-ai.gitgud.site/wiki/nai/models/flux/)
 
 [B]**➤ Гайды по обучению**[/B]
 
@@ -47,6 +56,7 @@
 ✱ [I]*Dreambooth*[/I] – для SD 1.5 обучение доступно начиная с 16 GB VRAM. Ни одна из потребительских карт не осилит тренировку будки для SDXL. Выдаёт отличные результаты. Генерирует полноразмерные модели:  
 [https://rentry.co/lycoris-and-lora-from-dreambooth](https://rentry.co/lycoris-and-lora-from-dreambooth) (англ.)  
 [https://github.com/nitrosocke/dreambooth-training-guide](https://github.com/nitrosocke/dreambooth-training-guide) (англ.)
+[https://rentry.org/lora-is-not-a-finetune](https://rentry.org/lora-is-not-a-finetune) (англ.)
 
 ✱ [I]*Текстуальная инверсия (Textual inversion)*[/I], или же просто Embedding, может подойти, если сеть уже умеет рисовать что-то похожее, этот способ тренирует лишь текстовый энкодер модели, не затрагивая UNet:  
 [https://rentry.org/textard](https://rentry.org/textard) (англ.)
@@ -71,7 +81,11 @@ YOLO-модели (You Only Look Once) могут быть обучены для
 Гайд по ControlNet: [https://stable-diffusion-art.com/controlnet](https://stable-diffusion-art.com/controlnet) (англ.)
 
 Подборка мокрописек для датасетов от анона: [https://rentry.org/te3oh](https://rentry.org/te3oh)  
-Группы тегов для бур: [https://danbooru.donmai.us/wiki_pages/tag_groups](https://danbooru.donmai.us/wiki_pages/tag_groups) (англ.)
+Группы тегов для бур: [https://danbooru.donmai.us/wiki_pages/tag_groups](https://danbooru.donmai.us/wiki_pages/tag_groups) (англ.)  
+NLP тэггер для кэпшенов T5: [https://github.com/2dameneko/ide-cap-chan](https://github.com/2dameneko/ide-cap-chan) (gui), [https://huggingface.co/Minthy/ToriiGate-v0.3](https://huggingface.co/Minthy/ToriiGate-v0.3) (модель), [https://huggingface.co/2dameneko/ToriiGate-v0.3-nf4/tree/main](https://huggingface.co/2dameneko/ToriiGate-v0.3-nf4/tree/main) (квант для врамлетов)
+
+Оптимайзеры: [https://2ch-ai.gitgud.site/wiki/tech/optimizers/](https://2ch-ai.gitgud.site/wiki/tech/optimizers/)  
+Визуализация работы разных оптимайзеров: [https://github.com/kozistr/pytorch_optimizer/blob/main/docs/visualization.md](https://github.com/kozistr/pytorch_optimizer/blob/main/docs/visualization.md)
 
 Гайды по апскейлу от анонов:  
 [https://rentry.org/SD_upscale](https://rentry.org/SD_upscale)  
@@ -79,7 +93,7 @@ YOLO-модели (You Only Look Once) могут быть обучены для
 [https://rentry.org/2ch_nai_guide#апскейл](https://rentry.org/2ch_nai_guide#апскейл)  
 [https://rentry.org/UpscaleByControl](https://rentry.org/UpscaleByControl)
 
-Коллекция лор от анонов: [https://rentry.org/2chAI_LoRA](https://rentry.org/2chAI_LoRA)
+Старая коллекция лор от анонов: [https://rentry.org/2chAI_LoRA](https://rentry.org/2chAI_LoRA)
 
 Гайды, эмбеды, хайпернетворки, лоры с форча:  
 [https://rentry.org/sdgoldmine](https://rentry.org/sdgoldmine)  
@@ -87,7 +101,8 @@ YOLO-модели (You Only Look Once) могут быть обучены для
 [https://rentry.org/hdgfaq](https://rentry.org/hdgfaq)  
 [https://rentry.org/hdglorarepo](https://rentry.org/hdglorarepo)  
 [https://gitgud.io/badhands/makesomefuckingporn](https://gitgud.io/badhands/makesomefuckingporn)  
-[https://rentry.org/ponyxl_loras_n_stuff](https://rentry.org/ponyxl_loras_n_stuff)  
+[https://rentry.org/ponyxl_loras_n_stuff](https://rentry.org/ponyxl_loras_n_stuff) - пони лоры  
+[https://rentry.org/illustrious_loras_n_stuff](https://rentry.org/illustrious_loras_n_stuff) - люстролоры  
 
 [B]**➤ Legacy ссылки на устаревшие технологии и гайды с дополнительной информацией**[/B]
 
