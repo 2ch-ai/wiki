@@ -12,6 +12,7 @@
 12. <https://arhivach.top/thread/927830/> <https://2ch.hk/ai/arch/2024-03-08/res/478081.html>
 13. <https://arhivach.top/thread/946884/> <https://2ch.hk/ai/arch/2024-03-19/res/532447.html>
 14. <https://arhivach.top/thread/952338/> <https://2ch.hk/ai/arch/2024-04-18/res/543635.html>
-15. <https://arhivach.top/thread/962087/>
-16. <https://arhivach.top/thread/981618/>
+15. <https://arhivach.top/thread/962087/> <https://2ch.hk/ai/arch/2024-05-26/res/570475.html>
+16. <https://arhivach.top/thread/981618/> <https://2ch.hk/ai/arch/2024-09-27/res/639060.html>
 17. <https://arhivach.top/thread/1019897/>
+18. <https://arhivach.xyz/thread/1104780/>
