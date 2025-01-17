@@ -28,28 +28,28 @@ title: 2ch /nai/ вики
 #### Как генерировать на своём железе? 
 Необходимо установить [пользователький интерфейс](./interfaces.md) для работы с нейронками и скачать любую понравившуюся [модель](./models/index.md).  
 
-??? note "Краткое руководство по вкату (NVidia)"
+!!! info "Краткое руководство по вкату (NVidia)"
     * Скачай [последний релиз интерфейса Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge/releases/tag/latest)
-    * Зарегистрируйся на <https://civitai.com> после чего скачай модель [AutismMix](https://civitai.com/models/288584?modelVersionId=324619) (либо же любую другую на выбор) и забрось её в `/models/Stable-diffusion`
+    * Зарегистрируйся на <https://civitai.com> после чего скачай модель [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl) (либо же любую другую на выбор) и забрось её в `/models/Stable-diffusion`
     * Запусти update.bat и дождись завершения операции  
     * Запусти run.bat и дождись, пока подтянутся все зависимости и откроется веб интерфейс по адресу <http://127.0.0.1:7860>  
 
-    Для начала можешь использовать такие настройки генерации (пример для AutismMix):
+    Для начала можешь использовать такие настройки генерации (пример для NoobAI-XL):
 
     * **Sampling method**: Euler a
     * **Schedule type**: Automatic
     * **Sampling steps**: 25
-    * **CFG Scale**: 7
-    * **Разрешение изображения**: 1280 x 1080 - можешь экспериментировать с соотношением сторон, но не выставляй разрешение сильно выше. Для получения более крупных картинок используй техники [апскейла](./upscale.md), такие как Hires. fix
+    * **CFG Scale**: 5
+    * **Разрешение изображения**: 1152 x 896 - можешь экспериментировать с соотношением сторон, но не выставляй разрешение сильно выше одного мегапикселя. Для получения более крупных картинок используй техники [апскейла](./upscale.md), такие как Hires. fix
 
-    * Начинай свой **промпт** с перечисления тегов качества, дальше дополняй [буру-тегами](./prompts.md#где-брать-теги) с перечислением того, что хочешь видеть:
+    * Начинай свой **промпт** с перечисления [буру-тегов](./prompts.md#где-брать-теги), описывающих то, что ты хочешь видеть на изображении. В конце промпта добавь теги качества:
     ```
-    score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up, source_anime
+    masterpiece, best quality, newest, absurdres, highres,
     ```
 
     * **Негативный промпт**:
     ```
-    source_furry, source_pony, source_cartoon, yellow background, 3d, muscular, thick thighs
+    worst quality, old, early, low quality, lowres, signature, username, logo, bad hands, mutated hands, mammal, anthro, furry, ambiguous form, feral, semi-anthro
     ```
 
     Примеры промтов можно посмотреть на civitai в описании к картинкам.
@@ -108,7 +108,7 @@ title: 2ch /nai/ вики
 #### Что насчёт цензуры?
 Наиболее популярные локальные модели не имеют какой-либо цензуры. Однако, модель может не знать какие-то концепты/фетиши, что, впрочем, исправляется при помощи такого механизма, как [LoRA](./lora/index.md).
 
-Для NSFW рекомендуется использовать модели на основе [Pony Diffusion V6 XL](./models/pony-diffusion-v6-xl.md). В случае, если доступный тебе объём видеопамяти не позволяет запускать XL-чекпонты, рекомендуется обратить внимание на [EasyFluff + HLL](./models/easy-fluff.md). 
+Для NSFW рекомендуется, в первую очередь, обратить внимание на модель [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl). В случае, если доступный тебе объём видеопамяти не позволяет запускать XL-чекпонты, рекомендуется обратить внимание на [EasyFluff + HLL](./models/easy-fluff.md). 
 
 В онлайн-сервисах по типу [civitai.com](https://civitai.com) существует цензура, блокирующая определённые запросы. Со списом запрещённых на CivitAI слов можешь ознакомиться [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist.json) и [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist-nsfw.json).
 
@@ -126,9 +126,9 @@ title: 2ch /nai/ вики
 ---
 
 #### Какую модель выбрать начинающему?  
-[AutismMix](https://civitai.com/models/288584/autismmix-sdxl) - один из самых популярных мёрджей модели PonyDiffusion V6 XL.
+[NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl) - самый популярных файнтьюн аниме-модели [Illustrious-XL](https://civitai.com/models/795765/illustrious-xl) на момент конца 2024 года.
 
-Данная модель предоставляет хороший базовый стиль и анатомию, но ценой является снижение вариативности генераций. Хороший вариант для начинающего.
+NoobAI-XL обладает хорошим знанием концептов, персонажей и стилей из коробки. Хороший вариант для начинающего.
 
 ---
 
