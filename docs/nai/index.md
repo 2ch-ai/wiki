@@ -29,27 +29,33 @@ title: 2ch /nai/ вики
 Необходимо установить [пользователький интерфейс](./interfaces.md) для работы с нейронками и скачать любую понравившуюся [модель](./models/index.md).  
 
 !!! info "Краткое руководство по вкату (NVidia)"
-    * Скачай [последний релиз интерфейса Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge/releases/tag/latest)
-    * Зарегистрируйся на <https://civitai.com> после чего скачай модель [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl) (либо же любую другую на выбор) и забрось её в `/models/Stable-diffusion`
-    * Запусти update.bat и дождись завершения операции  
-    * Запусти run.bat и дождись, пока подтянутся все зависимости и откроется веб интерфейс по адресу <http://127.0.0.1:7860>  
+    1. Скачай [последний релиз интерфейса Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge/releases/tag/latest)
+    2. Зарегистрируйся на <https://civitai.com>, после чего скачай любую модель на выбор. В качестве рекомендации можешь обратить внимание на одну из следующих моделей:
 
-    Для начала можешь использовать такие настройки генерации (пример для NoobAI-XL):
+        - [WAI-NSFW-illustrious-SDXL](https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl) - популярный мёрдж на основе Illustrious-XL. Дает приятный базовый стиль и менее требователен к промпту (текстовому запросу), что делает его хорошим вариантом для тех, кто не хочет заморачиваться с тонкой настройкой.
+
+        - [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl) - файнтьюн Illustrious-XL, лучше подходит для сложных стилистических запросов и вариативнее в генерации, но требует больше внимания к промпту.
+
+    3. Зайди в папку Forge и переброь скачанный файл с моделью в директорию `/models/Stable-diffusion`
+    3. Запусти update.bat и дождись завершения операции  
+    4. Запусти run.bat и дождись, пока подтянутся все зависимости и откроется веб интерфейс по адресу <http://127.0.0.1:7860>  
+
+    Для начала можешь использовать такие настройки генерации (пример для WAI-NSFW-illustrious-SDXL):
 
     * **Sampling method**: Euler a
     * **Schedule type**: Automatic
-    * **Sampling steps**: 25
-    * **CFG Scale**: 5
-    * **Разрешение изображения**: 1152 x 896 - можешь экспериментировать с соотношением сторон, но не выставляй разрешение сильно выше одного мегапикселя. Для получения более крупных картинок используй техники [апскейла](./upscale.md), такие как Hires. fix
+    * **Sampling steps**: 15-30
+    * **CFG Scale**: 5-7
+    * **Разрешение изображения**: 1024 x 1360 - можешь экспериментировать с соотношением сторон, но не выставляй разрешение сильно выше одного мегапикселя. Для получения более крупных картинок используй техники [апскейла](./upscale.md), такие как Hires. fix
 
     * Начинай свой **промпт** с перечисления [буру-тегов](./prompts.md#где-брать-теги), описывающих то, что ты хочешь видеть на изображении. В конце промпта добавь теги качества:
     ```
-    masterpiece, best quality, newest, absurdres, highres,
+    masterpiece, best quality, amazing quality
     ```
 
     * **Негативный промпт**:
     ```
-    worst quality, old, early, low quality, lowres, signature, username, logo, bad hands, mutated hands, mammal, anthro, furry, ambiguous form, feral, semi-anthro
+    bad quality, worst quality, worst detail, sketch, censor
     ```
 
     Примеры промтов можно посмотреть на civitai в описании к картинкам.
@@ -108,7 +114,7 @@ title: 2ch /nai/ вики
 #### Что насчёт цензуры?
 Наиболее популярные локальные модели не имеют какой-либо цензуры. Однако, модель может не знать какие-то концепты/фетиши, что, впрочем, исправляется при помощи такого механизма, как [LoRA](./lora/index.md).
 
-Для NSFW рекомендуется, в первую очередь, обратить внимание на модель [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl). В случае, если доступный тебе объём видеопамяти не позволяет запускать XL-чекпонты, рекомендуется обратить внимание на [EasyFluff + HLL](./models/easy-fluff.md). 
+Для NSFW рекомендуется, в первую очередь, обратить внимание на модели [WAI-NSFW-illustrious-SDXL](https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl) и [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl). В случае, если доступный тебе объём видеопамяти не позволяет запускать XL-чекпонты, рекомендуется обратить внимание на [EasyFluff + HLL](./models/easy-fluff.md). 
 
 В онлайн-сервисах по типу [civitai.com](https://civitai.com) существует цензура, блокирующая определённые запросы. Со списом запрещённых на CivitAI слов можешь ознакомиться [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist.json) и [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist-nsfw.json).
 
