@@ -66,7 +66,7 @@ click reForge "https://github.com/Panchovix/stable-diffusion-webui-reForge"
                                                        | [Stability Matrix](https://github.com/LykosAI/StabilityMatrix)
 
 **Какие интерфейсы работают с несколькими видеокартами?**  
-Только [SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI).
+[SwarmUI](https://github.com/mcmonkeyprojects/SwarmUI) позволяет запускать генерации в несколько потоков, используя несколько GPU/машин.
 
 ## AUTOMATIC1111 и его форки
 - [Вики AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features) - большая часть сведений актуальна для всех форков  
