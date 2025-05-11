@@ -114,7 +114,7 @@ title: 2ch /nai/ вики
 #### Что насчёт цензуры?
 Наиболее популярные локальные модели не имеют какой-либо цензуры. Однако, модель может не знать какие-то концепты/фетиши, что, впрочем, исправляется при помощи такого механизма, как [LoRA](./lora/index.md).
 
-Для NSFW рекомендуется, в первую очередь, обратить внимание на модели [WAI-NSFW-illustrious-SDXL](https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl) и [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl). В случае, если доступный тебе объём видеопамяти не позволяет запускать XL-чекпонты, рекомендуется обратить внимание на [EasyFluff + HLL](./models/easy-fluff.md). 
+Для NSFW рекомендуется, в первую очередь, обратить внимание на модели [WAI-NSFW-illustrious-SDXL](https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl) и [NoobAI-XL](https://civitai.com/models/833294/noobai-xl-nai-xl). В случае, если доступный тебе объём видеопамяти не позволяет запускать XL-чекпонты, рекомендуется обратить внимание на [EasyFluff + HLL](./models/stable-diffusion-1/#easyfluff--hll). 
 
 В онлайн-сервисах по типу [civitai.com](https://civitai.com) существует цензура, блокирующая определённые запросы. Со списом запрещённых на CivitAI слов можешь ознакомиться [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist.json) и [здесь](https://github.com/civitai/civitai/blob/main/src/utils/metadata/lists/blocklist-nsfw.json).
 
