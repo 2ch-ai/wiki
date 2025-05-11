@@ -122,7 +122,7 @@ class AUTO1111,SD.Next,Forge,reForge,ForgeClassic link;
 -----------------------------------------------------------------------------------|----------------|----------------------------------------------------|----------------
 [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) | август 2022    | Неповторимый оригинал от AUTOMATIC1111             | 💤 Не обновляется
 [SD.Next](https://github.com/vladmandic/sdnext)                                    | март 2023      | Есть поддержка FLUX, сильно переделан интерфейс    | ✅ Активен
-[Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge)                | январь 2024    | Есть поддержка FLUX                                | 💤 Не обновляется
+[Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge)                | январь 2024    | Есть поддержка FLUX                                | ✅ Активен
 [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge)             | июль 2024      | Больше всего семплеров                             | [❄️ Заморожен](https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/354) 
 [Forge Classic](https://github.com/Haoming02/sd-webui-forge-classic)               | август 2024    | Большое число оптимизаций, убраны legacy-фичи      | ✅ Активен
 
