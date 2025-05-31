@@ -21,4 +21,5 @@ pages:
       - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
+variables:
+  CI_DEBUG_TRACE: "true"
