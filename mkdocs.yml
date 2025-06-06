@@ -12,6 +12,7 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    - content.tabs.link
     - content.tooltips
     - navigation.tabs
     - search.suggest
@@ -49,6 +50,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.snippets
   - attr_list
   - md_in_html
@@ -75,11 +78,11 @@ nav:
       - Облака: ./nai/install/clouds.md
     - Интерфейсы: ./nai/interfaces.md
     - Модели:
-      - Главная: ./nai/models/index.md
+      - 'Главная': ./nai/models/index.md
       - 'Flux': ./nai/models/flux.md
-      - 'Pony Diffusion V6 XL': ./nai/models/pony-diffusion-v6-xl.md
       - 'Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
       - 'Stable Diffusion 1': ./nai/models/stable-diffusion-1.md
+      - 'Прочие модели': ./nai/models/other.md
     - Промпты: ./nai/prompts.md
     - Апскейл: ./nai/upscale.md
     - LoRA:

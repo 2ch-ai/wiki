@@ -41,6 +41,7 @@ classDef link fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#4051b5;
 class SD1.2,SD1.4,WD1.3,NAI1,FluffyRock,EasyFluff,hll-ликорис,hll+EasyFluff link;
 class SD1.5 no-link;
 ```
+
 ## FAQ
 **Какой чекпоинт выбрать?**  
 Stable Diffusion v1 и его производные являются устаревшими моделями на момент 2025 года.
