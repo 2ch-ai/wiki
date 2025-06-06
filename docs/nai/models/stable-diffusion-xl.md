@@ -285,8 +285,6 @@ Illustrious-XL v0.1 быстро приобрела популярность п�
 ## NoobAI-XL
 
 - [Huggungface команды Laxhar Dream Lab](https://huggingface.co/Laxhar)  
-  (содержит промежуточные версии и более подробную техническую информацию о моделях)
-
 - [Лоры на civitai для NoobAI-XL](https://civitai.com/search/models?baseModel=NoobAI&modelType=LORA&tags=anime&sortBy=models_v9)
 - [Модели на основе NoobAI-XL](https://civitai.com/search/models?baseModel=NoobAI&modelType=Checkpoint&tags=anime&sortBy=models_v9)
 
@@ -299,30 +297,38 @@ Illustrious_v0.1["Illustrious-XL v0.1"]
 Noob_early_access["NoobAI XL Early Access"]
 Noob_vpred_test["NoobAI XL V-pred test"]
 Noob_eps_v0.5["NoobAI XL Epsilon-pred 0.5"]
+Noob_eps_v0.6["NoobAI XL Epsilon-pred 0.6"]
 Noob_eps_v0.75["NoobAI XL Epsilon-pred 0.75"]
+Noob_eps_v0.77["NoobAI XL Epsilon-pred 0.77"]
 Noob_eps_v1.0["NoobAI XL Epsilon-pred 1.0"]
 Noob_eps_v1.1["NoobAI XL Epsilon-pred 1.1"]
 Noob_vpred_v0.5["NoobAI XL V-pred 0.5"]
 Noob_vpred_v0.6["NoobAI XL V-pred 0.6"]
 Noob_vpred_v0.65s["NoobAI XL V-pred 0.65s"]
+Noob_vpred_v0.65["NoobAI XL V-pred 0.65"]
 Noob_vpred_v0.75s["NoobAI XL V-pred 0.75s"]
+Noob_vpred_v0.75["NoobAI XL V-pred 0.75"]
 Noob_vpred_v0.9r["NoobAI XL V-pred 0.9r"]
 Noob_vpred_v1.0["NoobAI XL V-pred 1.0"]
 
 %% Relationships between models
 SDXL -->  Illustrious_v0.1
 Illustrious_v0.1 --> Noob_early_access
-Noob_early_access --> Noob_eps_v0.5
+Illustrious_v0.1 --> Noob_eps_v0.5
 Noob_early_access --> Noob_vpred_test
-Noob_eps_v0.5 --(здесь начали тренировать Text Encoder)--> Noob_eps_v0.75
-Noob_eps_v0.75 --> Noob_eps_v1.0
+Noob_eps_v0.5 --> Noob_eps_v0.6
+Noob_eps_v0.6 --(здесь начали тренировать Text Encoder)--> Noob_eps_v0.75
+Noob_eps_v0.75 --> Noob_eps_v0.77
+Noob_eps_v0.77 --> Noob_eps_v1.0
 Noob_eps_v1.0 --(здесь перестали тренировать Text Encoder)--> Noob_eps_v1.1
 Noob_eps_v1.0 --(здесь перестали тренировать Text Encoder)--> Noob_vpred_v0.5
 Noob_vpred_v0.5 --> Noob_vpred_v0.6
+Noob_vpred_v0.6 --> Noob_vpred_v0.65
 Noob_vpred_v0.6 --> Noob_vpred_v0.65s
-Noob_vpred_v0.65s --> Noob_vpred_v0.75s
-Noob_vpred_v0.75s --(здесь продолжили тренировать Text Encoder)--> Noob_vpred_v0.9r
-Noob_vpred_v0.9r --(здесь взяли Text Encoder от NoobAI XL Epsilon-pred 1.0 без доп. тренировки)--> Noob_vpred_v1.0
+Noob_vpred_v0.65 --> Noob_vpred_v0.75
+Noob_vpred_v0.65 --> Noob_vpred_v0.75s
+Noob_vpred_v0.75 --(здесь продолжили тренировать Text Encoder)--> Noob_vpred_v0.9r
+Noob_vpred_v0.75 --> Noob_vpred_v1.0
 
 %% Clickable links
 click SDXL "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
@@ -330,19 +336,23 @@ click Illustrious_v0.1 "https://civitai.com/models/795765/illustrious-xl"
 click Noob_early_access "https://civitai.com/models/833294?modelVersionId=932238"
 click Noob_vpred_test "https://civitai.com/models/833294?modelVersionId=962003"
 click Noob_eps_v0.5 "https://civitai.com/models/833294?modelVersionId=968495"
+click Noob_eps_v0.6 "https://huggingface.co/Laxhar/noobai-XL-0.6"
 click Noob_eps_v0.75 "https://civitai.com/models/833294?modelVersionId=998979"
+click Noob_eps_v0.77 "https://huggingface.co/Laxhar/noobai-XL-0.77"
 click Noob_eps_v1.0 "https://civitai.com/models/833294?modelVersionId=1022833"
 click Noob_eps_v1.1 "https://civitai.com/models/833294?modelVersionId=1116447"
 click Noob_vpred_v0.5 "https://civitai.com/models/833294?modelVersionId=1046043"
 click Noob_vpred_v0.6 "https://civitai.com/models/833294?modelVersionId=1070239"
+click Noob_vpred_v0.65 "https://huggingface.co/Laxhar/noobai-XL-Vpred-0.65"
 click Noob_vpred_v0.65s "https://civitai.com/models/833294?modelVersionId=1093948"
+click Noob_vpred_v0.75 "https://huggingface.co/Laxhar/noobai-XL-Vpred-0.75"
 click Noob_vpred_v0.75s "https://civitai.com/models/833294?modelVersionId=1140829"
 click Noob_vpred_v0.9r "https://civitai.com/models/833294?modelVersionId=1165792"
 click Noob_vpred_v1.0 "https://civitai.com/models/833294?modelVersionId=1190596"
 
 %% Styling
 classDef link fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#4051b5;
-class SDXL,Illustrious_v0.1,Noob_early_access,Noob_vpred_test,Noob_eps_v0.5,Noob_eps_v0.75,Noob_eps_v1.0,Noob_eps_v1.1,Noob_vpred_v0.5,Noob_vpred_v0.6,Noob_vpred_v0.65s,Noob_vpred_v0.75s,Noob_vpred_v0.9r,Noob_vpred_v1.0 link;
+class SDXL,Illustrious_v0.1,Noob_early_access,Noob_vpred_test,Noob_eps_v0.5,Noob_eps_v0.6,Noob_eps_v0.75,Noob_eps_v0.77,Noob_eps_v1.0,Noob_eps_v1.1,Noob_vpred_v0.5,Noob_vpred_v0.6,Noob_vpred_v0.65,Noob_vpred_v0.65s,Noob_vpred_v0.75,Noob_vpred_v0.75s,Noob_vpred_v0.9r,Noob_vpred_v1.0 link;
 ```
 
 [NoobAI-XL](https://civitai.com/models/833294) — серия файнтьюнов Illustrious-XL от команды **Laxhar Dream Lab**, состоящей из энтузиастов и независимых исследователей. Было выпущено несколько версий в октябре-декабре 2024 года. Считается самым дорогим некоммерческим файнтьюном SDXL.
