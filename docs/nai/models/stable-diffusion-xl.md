@@ -385,6 +385,7 @@ Rouwei_0.6.1_vpred["Rouwei 0.6.1 vpred"]
 Rouwei_0.7_eps["Rouwei 0.7 epsilon"]
 Rouwei_0.7_vpred["Rouwei 0.7 vpred"]
 Rouwei_0.8_eps["Rouwei 0.8 epsilon"]
+Rouwei_0.8_vpred["Rouwei 0.8 vpred"]
 
 %% Relationships between models
 SDXL --> Illustrious_v0.1
@@ -393,6 +394,7 @@ Rouwei_0.6_eps --> Rouwei_0.6.1_vpred
 Rouwei_0.6_eps --> Rouwei_0.7_eps
 Rouwei_0.7_eps --> Rouwei_0.7_vpred
 Rouwei_0.7_eps --> Rouwei_0.8_eps
+Rouwei_0.8_eps --> Rouwei_0.8_vpred
 
 %% Clickable links
 click SDXL "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
@@ -402,17 +404,18 @@ click Rouwei_0.6.1_vpred "https://civitai.com/models/950531?modelVersionId=11301
 click Rouwei_0.7_eps "https://civitai.com/models/950531?modelVersionId=1330983"
 click Rouwei_0.7_vpred "https://civitai.com/models/950531?modelVersionId=1360303"
 click Rouwei_0.8_eps "https://civitai.com/models/950531?modelVersionId=1832460"
+click Rouwei_0.8_vpred "https://civitai.com/models/950531?modelVersionId=1882934"
 
 %% Styling
 classDef link fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#4051b5;
-class SDXL,Illustrious_v0.1,Rouwei_0.6_eps,Rouwei_0.6_vpred,Rouwei_0.6.1_vpred,Rouwei_0.7_eps,Rouwei_0.7_vpred,Rouwei_0.8_eps link;
+class SDXL,Illustrious_v0.1,Rouwei_0.6_eps,Rouwei_0.6_vpred,Rouwei_0.6.1_vpred,Rouwei_0.7_eps,Rouwei_0.7_vpred,Rouwei_0.8_eps,Rouwei_0.8_vpred link;
 ```
 
 [RouWei](https://civitai.com/models/950531/RouWei) - серия fine-tune-чекпоинтов, основанная на [Illustrious-XL v0.1](https://civitai.com/models/795765/illustrious-xl), разработанная энтузиастом-одиночкой с никнеймом **Minthybasis**.
 
 Модель унаследовала сильные стороны своего предка - она распознаёт теги художников и персонажей с Danbooru, что позволяет запрашивать конкретные стили и персонажей напрямую через промпт.
 
-Первый чекпоинт Rouwei был выпущен в ноябре 2024 года, а серия продолжала активно обновляться до мая 2025 года. На июнь 2025 планируется выпуск как минимум ещё одной версии - v0.8 vpred.
+Первый чекпоинт Rouwei был выпущен в ноябре 2024 года, а серия продолжала активно обновляться до июня 2025 года.
 
 Для обучения Rouwei было затрачено более 8000 GPU-часов на кластере с H100, не считая времени, ушедшего на исследования и неудачные эксперименты.
 
