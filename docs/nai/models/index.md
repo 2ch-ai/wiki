@@ -1,24 +1,200 @@
 ---
-title: SD/FLUX модели
+title: Диффузионные модели
 ---
 
-# SD/FLUX модели
+# Диффузионные модели
 
-В этой статье рассматривается общая информация о диффузионных моделях, предназначенных для генерации изображений.
+В этой статье рассматривается общая информация об открытых диффузионных моделях, предназначенных для генерации изображений и видео.
 
-Информацию по конкретным моделям и их производным вы можете найти здесь:
+Информацию по конкретным семействам моделей и их производным вы можете найти по ссылкам ниже, либо использовав навигационную панель слева.
 
-- [FLUX](./flux.md)
-- [Stable Diffusion XL](./stable-diffusion-xl.md)
-- [Stable Diffusion 1](./stable-diffusion-1.md)
-- [Прочие модели](./other.md)
+## Хронология развития
+
+Ниже представлена хронология выпуска открытых диффузионных моделей и ключевых технологий, которые повлияли на развитие генерации изображений и видео.
+
+<style>
+.models-timeline {
+    margin: 30px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.year-column {
+    flex: 1;
+    position: relative;
+}
+
+.models-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.year-header {
+    margin-bottom: 20px;
+    padding: 4px 0;
+    
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    
+    background: linear-gradient(135deg, #4051b5, #303fa1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.model-card {
+    display: block;
+    padding: 8px 10px;
+    position: relative;
+    overflow: hidden;
+    
+    text-decoration: none;
+    color: var(--md-typeset-color); 
+    font-weight: 500;
+    
+    background: var(--md-default-bg-color);
+    border-radius: 10px;
+    border-left: 4px solid #526cfe;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-wrap: nowrap;
+    
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+a.model-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    background: linear-gradient(90deg, transparent, rgba(82, 108, 254, 0.1), transparent);
+    transition:
+        left 0.3s ease !important,
+        box-shadow 0.3s ease !important;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    z-index: -1;
+    
+    background: linear-gradient(to bottom, #526cfe1a, transparent);
+    transform: translateX(-50%);
+}
+
+a.model-card:hover {
+    box-shadow: 0 12px 35px rgba(82, 108, 254, 0.3);
+}
+
+/* ================================
+   Responsive Design - Mobile & Tablet
+   ================================ */
+@media (max-width: 1200px) {
+    /* Switch to 2x2 grid layout */
+    .timeline-container {
+        flex-wrap: wrap;
+    }
+    
+    .year-column {
+        flex: 1 1 calc(50% - 10px);
+        min-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Switch to vertical layout on mobile */
+    .timeline-container {
+        flex-direction: column;
+    }
+    
+    .year-column {
+        flex: 1;
+        min-width: auto;
+    }
+    
+    /* Hide timeline line on mobile */
+    .timeline-line {
+        display: none;
+    }
+}
+</style>
+
+<div class="models-timeline">
+    <div class="timeline-container">
+        <div class="year-column">
+            <div class="year-header">2022</div>
+            <div class="models-list">
+                <a href="/wiki/nai/models/stable-diffusion-1/" class="model-card">Stable Diffusion v1</a>
+                <a href="/wiki/nai/models/stable-diffusion-1/#novelai-v1" class="model-card">NovelAI v1</a>
+                <span class="model-card">Stable Diffusion v2</span>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+        <div class="year-column">
+            <div class="year-header">2023</div>
+            <div class="models-list">
+                <a href="/wiki/nai/lora" class="model-card">LoRA</a>
+                <a href="/wiki/nai/controlnet" class="model-card">ControlNet</a>
+                <a href="/wiki/nai/models/stable-diffusion-xl/" class="model-card">Stable Diffusion XL ⭐</a>
+                <a href="/wiki/nai/models/stable-diffusion-1/#easyfluff--hll" class="model-card">EasyFluff + HLL</a>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+        <div class="year-column">
+            <div class="year-header">2024</div>
+            <div class="models-list">
+                <a href="/wiki/nai/models/stable-diffusion-xl/#pony-diffusion-v6-xl" class="model-card">Pony Diffusion v6 XL</a>
+                <span class="model-card">Stable Cascade</span>
+                <span href="#" class="model-card">Stable Diffusion v3.0</span>
+                <span href="#" class="model-card">AuraFlow</span>
+                <a href="/wiki/nai/models/flux/" class="model-card">FLUX.1</a>
+                <a href="/wiki/nai/models/stable-diffusion-xl/#illustrious-xl" class="model-card">Illustrious-XL v0.1</a>
+                <span href="#" class="model-card">Stable Diffusion v3.5</span>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+        <div class="year-column">
+            <div class="year-header">2025</div>
+            <div class="models-list">
+                <span href="#" class="model-card">HunyuanVideo</span>
+                <span href="#" class="model-card">Wan 2.1</span>
+                <span href="#" class="model-card">Chroma</span>
+                <span href="#" class="model-card">Qwen Image</span>
+                <span href="#" class="model-card">Qwen Image Edit</span>
+                <span href="#" class="model-card">Wan 2.2</span>
+                <span href="#" class="model-card">FLUX.1-Krea-dev</span>
+                <span href="#" class="model-card">FLUX.1-Kontext-dev</span>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+    </div>
+</div>
 
 ## FAQ
-**Какую модель выбрать?**  
+**Какую модель выбрать для генерации изображений?**  
 
-На момент июня 2025 самыми популярными и актуальными являются модели на основе [SDXL](./stable-diffusion-xl.md).
+На момент сентября 2025 самыми популярными и актуальными остаются модели на основе [SDXL](./stable-diffusion-xl.md).
 
-В отдельных случаях вам так же может быть интересен [FLUX](./flux.md).
+В отдельных случаях вам так же может быть интересен [FLUX](./flux.md), Qwen-Image и WAN 2.2.
+
+---
+
+**Какую модель выбрать для генерации видео?**  
+
+WAN 2.2
 
 ## Виды моделей
 
