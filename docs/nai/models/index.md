@@ -172,8 +172,8 @@ a.model-card:hover {
                 <span href="#" class="model-card">HunyuanVideo</span>
                 <span href="#" class="model-card">Wan 2.1</span>
                 <span href="#" class="model-card">Chroma</span>
-                <span href="#" class="model-card">Qwen Image</span>
-                <span href="#" class="model-card">Qwen Image Edit</span>
+                <a href="/wiki/nai/models/qwen-image/" class="model-card">Qwen Image</a>
+                <a href="/wiki/nai/models/qwen-image/" class="model-card">Qwen Image Edit</a>
                 <span href="#" class="model-card">Wan 2.2</span>
                 <span href="#" class="model-card">FLUX.1-Krea-dev</span>
                 <span href="#" class="model-card">FLUX.1-Kontext-dev</span>
@@ -188,7 +188,7 @@ a.model-card:hover {
 
 На момент сентября 2025 самыми популярными и актуальными остаются модели на основе [SDXL](./stable-diffusion-xl.md).
 
-Для SFW генераций без сложного позинга вам так же может быть интересен [FLUX](./flux.md), Qwen-Image и WAN 2.2.
+Для SFW генераций без сложного позинга вам так же может быть интересен [FLUX](./flux.md), [Qwen-Image](./qwen-image.md) и WAN 2.2.
 
 ---
 
