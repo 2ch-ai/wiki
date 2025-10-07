@@ -4,17 +4,20 @@ title: Qwen-Image
 
 # Qwen-Image
 
-**Qwen-Image** — модель для генерации изображений из текстового описания, разработанная командой Qwen и выпущенная в августе 2024 года.
+**Qwen-Image** — модель для генерации изображений из текстового описания, разработанная командой Qwen и выпущенная в августе 2025 года.
 
-**Qwen-Image-Edit** — специализированная модель для редактирования существующих изображений на основе текстовых инструкций, выпущена с небольшой задержкой после **Qwen-Image**.
+**Qwen-Image-Edit** — специализированная модель для редактирования существующих изображений на основе текстовых инструкций, выпущена с небольшой задержкой после Qwen-Image.
 
-Обе модели представляют собой 20-миллиардные MMDiT (Multi-modal Diffusion Transformer) и отличаются продвинутым пониманием промпта и возможностью генерации текста внутри изображений.
+**Qwen-Image-Edit-2509** — обновлённая версия Qwen-Image-Edit, выпущенная в сентябре 2025 года. Добавлены расширенные возможности редактирования: поддержка нескольких изображений (1-3 изображения одновременно), встроенная поддержка ControlNet (карты глубины, границы, OpenPose), улучшенна консистентность при работе с лицами, объектами и текстом.
+
+Модели представляют собой 20-миллиардные MMDiT (Multi-modal Diffusion Transformer) и отличаются продвинутым пониманием промпта и возможностью генерации текста внутри изображений.
 
 В качестве текстовых инструкций модели поддерживают несколько языков, включая русский.
 
 ## Официальные ссылки
 - [Офф. репозиторий Qwen-Image](https://huggingface.co/Qwen/Qwen-Image)
 - [Офф. репозиторий Qwen-Image-Edit](https://huggingface.co/Qwen/Qwen-Image-Edit)
+- [Офф. репозиторий Qwen-Image-Edit-2509](https://huggingface.co/Qwen/Qwen-Image-Edit-2509)
 - [Release Notes: Qwen-Image](https://qwenlm.github.io/blog/qwen-image/)
 - [Release Notes: Qwen-Image-Edit](https://qwenlm.github.io/blog/qwen-image-edit/)
 
@@ -48,6 +51,7 @@ GGUF - это формат для сжатия нейронных сетей, к
 
 - [Qwen-Image-GGUF](https://huggingface.co/city96/Qwen-Image-gguf)
 - [Qwen-Image-Edit-GGUF](https://huggingface.co/QuantStack/Qwen-Image-Edit-GGUF)
+- [Qwen-Image-Edit-2509-GGUF](https://huggingface.co/QuantStack/Qwen-Image-Edit-2509-GGUF)
 - [Ноды для поддержки GGUF в ComfyUI](https://github.com/city96/ComfyUI-GGUF)  
 
 **Особенности**
@@ -71,7 +75,8 @@ GGUF - это формат для сжатия нейронных сетей, к
 Варианты с fp4-квантами будут особенно интересны владельцам 50 поколения видеокарт, поскольку данные карты обладают аппаратной поддержкой fp4, благодаря чему скорость будет ещё выше.
 
 - [Qwen-Image (Nunchaku)](https://huggingface.co/nunchaku-tech/nunchaku-qwen-image)  
-- [Qwen-Image-Edit (Nunchaku)](https://huggingface.co/nunchaku-tech/nunchaku-qwen-image-edit)
+- [Qwen-Image-Edit (Nunchaku)](https://huggingface.co/nunchaku-tech/nunchaku-qwen-image-edit)  
+- [Qwen-Image-Edit-2509 (Nunchaku)](https://huggingface.co/nunchaku-tech/nunchaku-qwen-image-edit-2509)  
 - [Ноды ComfyUI для поддержки Nunchaku-квантов](https://github.com/nunchaku-tech/ComfyUI-nunchaku)  
 - [Дополнительный pip-пакет для поддержки Nunchaku-квантов в ComfyUI](https://nunchaku.tech/docs/nunchaku/installation/installation.html#installing-nunchaku)  
   (без него кастомные ноды работать не будут)
