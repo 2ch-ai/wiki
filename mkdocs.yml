@@ -1,7 +1,7 @@
 site_name: 2ch /ai/ wiki
-site_url: https://2ch-ai.gitgud.site/wiki
+site_url: https://2ch-ai.github.io/wiki/
 
-repo_url: https://gitgud.io/2ch-ai/wiki/
+repo_url: https://github.com/2ch-ai/wiki
 edit_uri: -/edit/master/docs/
 
 theme:

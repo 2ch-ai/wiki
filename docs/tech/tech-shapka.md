@@ -33,11 +33,11 @@
 
 [B]**➤ Обучение SDXL**[/B]
 
-[https://2ch-ai.gitgud.site/wiki/tech/sdxl/](https://2ch-ai.gitgud.site/wiki/tech/sdxl/)
+[https://2ch-ai.github.io/wiki/tech/sdxl/](https://2ch-ai.github.io/wiki/tech/sdxl/)
 
 [B]**➤ Flux**[/B]
 
-[https://2ch-ai.gitgud.site/wiki/nai/models/flux/](https://2ch-ai.gitgud.site/wiki/nai/models/flux/)
+[https://2ch-ai.github.io/wiki/nai/models/flux/](https://2ch-ai.github.io/wiki/nai/models/flux/)
 
 [B]**➤ Гайды по обучению**[/B]
 
@@ -51,7 +51,7 @@
 ✱ [I]*LyCORIS*[/I] (Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion) - проект по созданию алгоритмов для обучения дополнительных частей модели. Ранее имел название LoCon и предлагал лишь тренировку дополнительных conv слоёв. В настоящий момент включает в себя алгоритмы LoCon, LoHa, LoKr, DyLoRA, IA3, а так же на последних dev ветках возможность тренировки всех (или не всех, в зависимости от конфига) частей сети на выбранном ранге:  
 [https://github.com/KohakuBlueleaf/LyCORIS](https://github.com/KohakuBlueleaf/LyCORIS)
 
-Подробнее про алгоритмы в вики [https://2ch-ai.gitgud.site/wiki/tech/lycoris/](https://2ch-ai.gitgud.site/wiki/tech/lycoris/)
+Подробнее про алгоритмы в вики [https://2ch-ai.github.io/wiki/tech/lycoris/](https://2ch-ai.github.io/wiki/tech/lycoris/)
 
 ✱ [I]*Dreambooth*[/I] – для SD 1.5 обучение доступно начиная с 16 GB VRAM. Ни одна из потребительских карт не осилит тренировку будки для SDXL. Выдаёт отличные результаты. Генерирует полноразмерные модели:  
 [https://rentry.co/lycoris-and-lora-from-dreambooth](https://rentry.co/lycoris-and-lora-from-dreambooth) (англ.)  
@@ -64,7 +64,7 @@
 **➤ Тренировка YOLO-моделей для ADetailer:**  
 YOLO-модели (You Only Look Once) могут быть обучены для поиска определённых объектов на изображении. В паре с ADetailer они могут быть использованы для автоматического инпеинта по найденной области.
 
-Подробнее в вики: [https://2ch-ai.gitgud.site/wiki/tech/yolo/](https://2ch-ai.gitgud.site/wiki/tech/yolo/)
+Подробнее в вики: [https://2ch-ai.github.io/wiki/tech/yolo/](https://2ch-ai.github.io/wiki/tech/yolo/)
 
 [I]*Не забываем про золотое правило GIGO ("Garbage in, garbage out"): какой датасет, такой и результат.*[/I]
 
@@ -84,7 +84,7 @@ YOLO-модели (You Only Look Once) могут быть обучены для
 Группы тегов для бур: [https://danbooru.donmai.us/wiki_pages/tag_groups](https://danbooru.donmai.us/wiki_pages/tag_groups) (англ.)  
 NLP тэггер для кэпшенов T5: [https://github.com/2dameneko/ide-cap-chan](https://github.com/2dameneko/ide-cap-chan) (gui), [https://huggingface.co/Minthy/ToriiGate-v0.3](https://huggingface.co/Minthy/ToriiGate-v0.3) (модель), [https://huggingface.co/2dameneko/ToriiGate-v0.3-nf4/tree/main](https://huggingface.co/2dameneko/ToriiGate-v0.3-nf4/tree/main) (квант для врамлетов)
 
-Оптимайзеры: [https://2ch-ai.gitgud.site/wiki/tech/optimizers/](https://2ch-ai.gitgud.site/wiki/tech/optimizers/)  
+Оптимайзеры: [https://2ch-ai.github.io/wiki/tech/optimizers/](https://2ch-ai.github.io/wiki/tech/optimizers/)  
 Визуализация работы разных оптимайзеров: [https://github.com/kozistr/pytorch_optimizer/blob/main/docs/visualization.md](https://github.com/kozistr/pytorch_optimizer/blob/main/docs/visualization.md)
 
 Гайды по апскейлу от анонов:  
@@ -106,11 +106,11 @@ NLP тэггер для кэпшенов T5: [https://github.com/2dameneko/ide-c
 
 [B]**➤ Legacy ссылки на устаревшие технологии и гайды с дополнительной информацией**[/B]
 
-[https://2ch-ai.gitgud.site/wiki/tech/legacy/](https://2ch-ai.gitgud.site/wiki/tech/legacy/)
+[https://2ch-ai.github.io/wiki/tech/legacy/](https://2ch-ai.github.io/wiki/tech/legacy/)
 
 [B]**➤ Прошлые треды**[/B]
 
-[https://2ch-ai.gitgud.site/wiki/tech/old_threads/](https://2ch-ai.gitgud.site/wiki/tech/old_threads/)
+[https://2ch-ai.github.io/wiki/tech/old_threads/](https://2ch-ai.github.io/wiki/tech/old_threads/)
 
 
-Шапка: [https://2ch-ai.gitgud.site/wiki/tech/tech-shapka/](https://2ch-ai.gitgud.site/wiki/tech/tech-shapka/)
+Шапка: [https://2ch-ai.github.io/wiki/tech/tech-shapka/](https://2ch-ai.github.io/wiki/tech/tech-shapka/)

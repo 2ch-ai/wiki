@@ -8,14 +8,14 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 
 Прошлый тред: ==>>==  
 
-Вики треда: <https://2ch-ai.gitgud.site/wiki/speech/>
+Вики треда: <https://2ch-ai.github.io/wiki/speech/>
 
 **[B]FAQ[/B]**
 
 **[B]Q: Хочу озвучивать пасты с двача голосом Путина/Неко-Арк/и т.п.[/B]**
 
 1\. Используешь любой инструмент для синтеза голоса из текста - есть локальные, есть онлайн через huggingface или в виде ботов в телеге:  
-<https://2ch-ai.gitgud.site/wiki/speech/#синтез-голоса-из-текста-tts>
+<https://2ch-ai.github.io/wiki/speech/#синтез-голоса-из-текста-tts>
 
 Спейс без лимитов для EdgeTTS:  
 <https://huggingface.co/spaces/NeuroSenko/rus-edge-tts-webui>
@@ -24,7 +24,7 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 <https://dmkilab.com/soundworks>
 
 2\. Перегоняешь голос в нужный тебе через RVC. Для него есть огромное число готовых голосов, можно обучать свои модели:  
-<https://2ch-ai.gitgud.site/wiki/speech/sts/rvc/rvc/>
+<https://2ch-ai.github.io/wiki/speech/sts/rvc/rvc/>
 
 **[B]Q: Как делать нейрокаверы?[/B]**
 
@@ -32,7 +32,7 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 <https://github.com/MaHivka/ultimate-voice-models-FAQ/wiki/UVR>
 
 2\. Преобразуешь дорожку с вокалом к нужному тебе голосу через RVC:  
-<https://2ch-ai.gitgud.site/wiki/speech/sts/rvc/rvc/>
+<https://2ch-ai.github.io/wiki/speech/sts/rvc/rvc/>
 
 3\. Объединяешь дорожки при помощи Audacity или любой другой тулзы для работы с аудио
 
@@ -69,4 +69,4 @@ speech   |  Голосовых нейронок тред (TTS, STS, STT) ==#xxxx
 <https://heygen.com> перевод видео с сохранением оригинального голоса и синхронизацией движения губ на видеопотоке. Так же доступны функции TTS и ещё что-то  
 <https://app.suno.ai> генератор композиций прямо из текста. Есть отдельный тред на доске  ==>>==
 
-Шаблон для переката: <https://2ch-ai.gitgud.site/wiki/speech/speech-shapka/>
+Шаблон для переката: <https://2ch-ai.github.io/wiki/speech/speech-shapka/>
