@@ -3,10 +3,9 @@
 
 ***
 
-(4 стула) | (выебоны) | (оверфит) | (производительность GPU)
------- | ------ | ------ | ------
-[![](https://i.imgur.com/oYvIzol.png)](https://i.imgur.com/oYvIzol.png)  | [![](https://i.imgur.com/7zWzj10.png)](https://i.imgur.com/7zWzj10.png) | [![](https://i.imgur.com/Wo0tLKc.png)](https://i.imgur.com/Wo0tLKc.png) | [![](https://i.imgur.com/G7cZOKZ.png)](https://i.imgur.com/G7cZOKZ.png)
-
+(4 стула) | (выебоны) | (оверфит) | (производительность GPU) 
+------ | ------ | ------ | ------ 
+[![](https://i.imgur.com/oYvIzol.png)](https://i.imgur.com/oYvIzol.png)  | [![](https://i.imgur.com/7zWzj10.png)](https://i.imgur.com/7zWzj10.png) | [![](https://i.imgur.com/Wo0tLKc.png)](https://i.imgur.com/Wo0tLKc.png) | [![](https://i.imgur.com/ati3r62.jpeg)]([https://i.imgur.com/ati3r62.jpeg)
 ***
 
 [I]*ИТТ делимся советами, лайфхаками, наблюдениями, результатами обучения, обсуждаем внутреннее устройство диффузионных моделей, собираем датасеты, решаем проблемы и экспериментируем*[/I]
@@ -26,6 +25,12 @@
 [https://github.com/Nerogar/OneTrainer](https://github.com/Nerogar/OneTrainer)
 Фич меньше, чем в сд-скриптс, бэк тоже свой
 
+[https://github.com/Mikubill/naifu](https://github.com/Mikubill/naifu)
+Бэк которым тренили noobai
+
+[https://github.com/bluvoll/sd-scripts](https://github.com/bluvoll/sd-scripts)
+Форк сд-скриптов для тренировки rectified flow xl чекпоинтов
+
 [B]**➤ GUI-обёртки для sd-scripts**[/B]
 
 [https://github.com/bmaltais/kohya_ss](https://github.com/bmaltais/kohya_ss)  
@@ -38,6 +43,11 @@
 [B]**➤ Flux**[/B]
 
 [https://2ch-ai.github.io/wiki/nai/models/flux/](https://2ch-ai.github.io/wiki/nai/models/flux/)
+
+[B]**➤ Wan**[/B]
+
+[https://github.com/kohya-ss/musubi-tuner](https://github.com/kohya-ss/musubi-tuner)  
+[https://github.com/tdrussell/diffusion-pipe](https://github.com/tdrussell/diffusion-pipe)
 
 [B]**➤ Гайды по обучению**[/B]
 
