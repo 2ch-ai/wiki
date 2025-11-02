@@ -5,7 +5,7 @@
 
 (4 стула) | (выебоны) | (оверфит) | (производительность GPU) 
 ------ | ------ | ------ | ------ 
-[![](https://i.imgur.com/oYvIzol.png)](https://i.imgur.com/oYvIzol.png)  | [![](https://i.imgur.com/7zWzj10.png)](https://i.imgur.com/7zWzj10.png) | [![](https://i.imgur.com/Wo0tLKc.png)](https://i.imgur.com/Wo0tLKc.png) | [![](https://i.imgur.com/ati3r62.jpeg)]([https://i.imgur.com/ati3r62.jpeg)
+[![](https://i.imgur.com/oYvIzol.png)](https://i.imgur.com/oYvIzol.png)  | [![](https://i.imgur.com/7zWzj10.png)](https://i.imgur.com/7zWzj10.png) | [![](https://i.imgur.com/Wo0tLKc.png)](https://i.imgur.com/Wo0tLKc.png) | [![](https://i.imgur.com/ati3r62.jpeg)](https://i.imgur.com/ati3r62.jpeg)
 ***
 
 [I]*ИТТ делимся советами, лайфхаками, наблюдениями, результатами обучения, обсуждаем внутреннее устройство диффузионных моделей, собираем датасеты, решаем проблемы и экспериментируем*[/I]
