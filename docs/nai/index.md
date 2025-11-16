@@ -231,4 +231,4 @@ sd_model_checkpoint,sd_vae,CLIP_stop_at_last_layers
 
 Ты дочитал FAQ до конца. Молодец!
 
-Если у тебя остались ещё вопросы, спрашивай в [Anime Diffusion](https://2ch.hk/ai/) треде.
+Если у тебя остались ещё вопросы, спрашивай в [Anime Diffusion](https://2ch.su/ai/catalog.html?search=nai&tags=1) треде.
