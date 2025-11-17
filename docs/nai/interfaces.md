@@ -101,6 +101,7 @@ AUTO1111 --> SD.Next
 AUTO1111 --> Forge
 Forge --> reForge
 Forge --> ForgeClassic["Forge Classic"]
+ForgeClassic --> ForgeClassicNeo["Forge Classic Neo"]
 
 %% Clickable links
 click AUTO1111 "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
@@ -108,10 +109,11 @@ click SD.Next "https://github.com/vladmandic/sdnext"
 click Forge "https://github.com/lllyasviel/stable-diffusion-webui-forge"
 click reForge "https://github.com/Panchovix/stable-diffusion-webui-reForge"
 click ForgeClassic "https://github.com/Haoming02/sd-webui-forge-classic"
+click ForgeClassicNeo "https://github.com/Haoming02/sd-webui-forge-classic/tree/neo"
 
 %% Styling
 classDef link fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#4051b5;
-class AUTO1111,SD.Next,Forge,reForge,ForgeClassic link;
+class AUTO1111,SD.Next,Forge,reForge,ForgeClassic,ForgeClassicNeo link;
 ```
 
 Все форки AUTO1111 имеют схожий со своим предком интерфейс. По большей части, разница между ними заключается в различных внутренних оптимизациях, поддержке различных моделей и стандартной комплектации плагинов.
@@ -122,9 +124,10 @@ class AUTO1111,SD.Next,Forge,reForge,ForgeClassic link;
 -----------------------------------------------------------------------------------|----------------|----------------------------------------------------|----------------
 [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) | август 2022    | Неповторимый оригинал от AUTOMATIC1111             | 💤 Не обновляется
 [SD.Next](https://github.com/vladmandic/sdnext)                                    | март 2023      | Есть поддержка FLUX, сильно переделан интерфейс    | ✅ Активен
-[Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge)                | январь 2024    | Есть поддержка FLUX                                | ✅ Активен
-[reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge)             | июль 2024      | Больше всего семплеров                             | [❄️ Заморожен](https://github.com/Panchovix/stable-diffusion-webui-reForge/discussions/354) 
+[Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge)                | январь 2024    | Есть поддержка FLUX                                | 💤 Не обновляется
+[reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge)             | июль 2024      | Больше всего семплеров                             | ✅ Активен 
 [Forge Classic](https://github.com/Haoming02/sd-webui-forge-classic)               | август 2024    | Большое число оптимизаций, убраны legacy-фичи      | ✅ Активен
+[Forge Classic Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo)  | июль 2025      | Поддержка Qwen-Image, Wan 2.2, Flux Kontext, Lumina-Image-2.0, Chroma     | ✅ Активен
 
 #### SD.Next
 В Stable Diffusion web UI долго откладывали обновления библиотек для нейросетей, которые повышали производительность на последних линейках видеокарт.
@@ -154,6 +157,13 @@ class AUTO1111,SD.Next,Forge,reForge,ForgeClassic link;
 В августе 2024 у Forge появился ещё один форк от Haoming02. Данный форк получил название [Forge Classic](https://github.com/Haoming02/sd-webui-forge-classic).
 
 Цель такая же как и reForge - сделать "стабильную" версию Forge, которая не будет ломать обратную совместимость со старыми наработками.
+
+#### Forge Classic Neo
+[Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) - это ответвление Forge Classic, ставящее цель создать максимально облегчённый WebUI без лишних функций.
+
+Из оригинального Forge удалены многие возможности (SD2/SD3, Hypernetworks, утилиты обучения, большинство встроенных расширений) в пользу производительности.
+
+Взамен добавлена поддержка новых моделей (Wan 2.2, Qwen-Image, Flux Kontext, Lumina-Image-2.0, Chroma), обновлён до PyTorch 2.8.0, добавлена поддержка Nunchaku, SageAttention/FlashAttention и улучшено управление памятью.
 
 ## ComfyUI
 * [Github](https://github.com/comfyanonymous/ComfyUI)  
