@@ -163,17 +163,19 @@ a.model-card:hover {
                 <a href="/wiki/nai/models/flux/" class="model-card">FLUX.1</a>
                 <a href="/wiki/nai/models/stable-diffusion-xl/#illustrious-xl" class="model-card">Illustrious-XL v0.1</a>
                 <span href="#" class="model-card">Stable Diffusion v3.5</span>
+                <span href="#" class="model-card">HunyuanVideo</span>
             </div>
             <div class="timeline-line"></div>
         </div>
         <div class="year-column">
             <div class="year-header">2025</div>
             <div class="models-list">
-                <span href="#" class="model-card">HunyuanVideo</span>
                 <span href="#" class="model-card">Wan 2.1</span>
+                <a href="/wiki/nai/models/lumina-image-2/" class="model-card">Lumina Image 2</a>
                 <span href="#" class="model-card">Chroma</span>
                 <a href="/wiki/nai/models/qwen-image/" class="model-card">Qwen Image</a>
                 <a href="/wiki/nai/models/qwen-image/" class="model-card">Qwen Image Edit</a>
+                <a href="/wiki/nai/models/lumina-image-2/#neta-lumina" class="model-card">Neta-Lumina</a>
                 <span href="#" class="model-card">Wan 2.2</span>
                 <span href="#" class="model-card">FLUX.1-Krea-dev</span>
                 <span href="#" class="model-card">FLUX.1-Kontext-dev</span>

@@ -82,6 +82,7 @@ nav:
     - Модели:
       - 'Главная': ./nai/models/index.md
       - 'Qwen-image': ./nai/models/qwen-image.md
+      - 'Lumina Image 2': ./nai/models/lumina-image-2.md
       - 'Flux': ./nai/models/flux.md
       - 'Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
       - 'Stable Diffusion 1': ./nai/models/stable-diffusion-1.md
