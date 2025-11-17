@@ -11,6 +11,7 @@
 ## Где брать теги
 
 * <https://danbooru.donmai.us/wiki_pages/tag_groups> - список тегов с danbooru
+* <https://tagexplorer.github.io/> - визуальный навигатор по нескольким группам тегов: лицо/голова, поза, композиция, художники и т.п.
 * <https://civitai.com/tag/wildcards> - готовые наборы wildcards
 * <https://rentry.co/NAIwildcards> - старый блокнот со списком тегов с бур по категориям
 * <https://e621.net/wiki_pages/1671> - фурри-теги
