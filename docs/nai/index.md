@@ -12,7 +12,7 @@ title: 2ch /nai/ вики
 </style>
 
 <center>
-  <img style="pointer-events: none; height: 150px;" src="https://counter.seku.su/cmoe?name=2ch_nai_wiki&theme=gb" />
+  <img style="pointer-events: none; height: 150px;" src="https://count.getloli.com/@2ch-nai?name=2ch-nai&theme=gelbooru&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" />
 
   <div style="font-size: 22px; font-weight: bold; font-family: monospace;">
     Добро пожаловать на 2ch /nai/ вики!
