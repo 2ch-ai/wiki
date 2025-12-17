@@ -179,6 +179,7 @@ a.model-card:hover {
                 <span href="#" class="model-card">Wan 2.2</span>
                 <span href="#" class="model-card">FLUX.1-Krea-dev</span>
                 <span href="#" class="model-card">FLUX.1-Kontext-dev</span>
+                <span href="#" class="model-card">Z-Image</span>
             </div>
             <div class="timeline-line"></div>
         </div>
