@@ -167,11 +167,16 @@ class AUTO1111,SD.Next,Forge,reForge,ForgeClassic,ForgeClassicNeo link;
 
 ## ComfyUI
 * [Github](https://github.com/comfyanonymous/ComfyUI)  
-* [Примеры готовых workflow](https://comfyanonymous.github.io/ComfyUI_examples/)
-* [Англоязычный гайд](https://comfyanonymous.github.io/ComfyUI_tutorial_vn/) от автора ComfyUI в виде визуальный новеллы
-* [Русскоязычный гайд](https://habr.com/ru/articles/729848/)
+* [Примеры готовых workflow от автора ComfyUI](https://comfyanonymous.github.io/ComfyUI_examples/)
+* [Гайд от анона с форча (english)](https://rentry.org/comfyui_guide_1girl)  
+* [Гайд от анона с форча (перевод)](./comfyui/index.md)  
+* [Гайд от автора ComfyUI в виде визуальный новеллы (english)](https://comfyanonymous.github.io/ComfyUI_tutorial_vn/)  
+* [Русскоязычный гайд с хабра](https://habr.com/ru/articles/729848/)
 * [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager) - менеджер кастомных нод, must have для всех пользователей ComfyUI
 * [krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion) - интеграция с Krita, позволяет использовать ваши workflows в ней напрямую (см. [видео](https://www.youtube.com/watch?v=TeALR63-LzE)). Любые параметры можно выносить в интерфейс самой Krita
+
+!!! note "Рекомендации по выбору гайда"
+    В первую очередь рекомендуется обратить внимание на [гайд от анона с форча](https://rentry.org/comfyui_guide_1girl) или его [перевод](./comfyui/index.md). Из вышеприведённого списка этот гайд самый подробный и актуальный.
 
 ![](https://files.catbox.moe/fi11dc.jpg)
 

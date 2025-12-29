@@ -78,7 +78,9 @@ nav:
       - NVidia: https://rentry.co/2ch_nai_guide
       - AMD: ./nai/install/amd.md
       - Облака: ./nai/install/clouds.md
-    - Интерфейсы: ./nai/interfaces.md
+    - Интерфейсы:
+      - Главная: ./nai/interfaces/index.md
+      - ComfyUI: ./nai/interfaces/comfyui/index.md
     - Модели:
       - 'Главная': ./nai/models/index.md
       - 'Qwen-image': ./nai/models/qwen-image.md
