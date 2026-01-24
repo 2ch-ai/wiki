@@ -326,7 +326,7 @@ a.model-card-title:hover::after {
                 <div class="model-card">
                     <span class="model-card-title">FLUX.2</span>
                     <span class="model-card-links">
-                        <a class="hf-link" href="https://huggingface.co/black-forest-labs" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs/FLUX.2-dev" target="_blank"></a>
                         <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/flux2/" target="_blank"></a>
                     </span>
                 </div>
