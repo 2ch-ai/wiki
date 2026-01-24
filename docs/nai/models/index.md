@@ -19,13 +19,23 @@ title: Диффузионные модели
 }
 
 .timeline-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
+.timeline-divider {
+    grid-column: 1 / -1;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #526cfe40, transparent);
+    margin: 10px 0;
+}
+
+.timeline-divider + .year-column {
+    grid-column-start: 2;
+}
+
 .year-column {
-    flex: 1;
     position: relative;
 }
 
@@ -103,29 +113,28 @@ a.model-card:hover {
    Responsive Design - Mobile & Tablet
    ================================ */
 @media (max-width: 1200px) {
-    /* Switch to 2x2 grid layout */
     .timeline-container {
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .year-column {
-        flex: 1 1 calc(50% - 10px);
-        min-width: calc(50% - 10px);
+
+    .timeline-divider + .year-column {
+        grid-column-start: auto;
     }
 }
 
 @media (max-width: 768px) {
-    /* Switch to vertical layout on mobile */
     .timeline-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
-    
-    .year-column {
-        flex: 1;
-        min-width: auto;
-    }
-    
-    /* Hide timeline line on mobile */
+
+    /* Reverse chronological order on mobile: 2026, 2025, 2024, 2023, 2022 */
+    .timeline-container > :nth-child(1) { order: 3; } /* 2024 */
+    .timeline-container > :nth-child(2) { order: 2; } /* 2025 */
+    .timeline-container > :nth-child(3) { order: 1; } /* 2026 */
+    .timeline-container > :nth-child(5) { order: 5; } /* 2022 */
+    .timeline-container > :nth-child(6) { order: 4; } /* 2023 */
+
+    .timeline-divider,
     .timeline-line {
         display: none;
     }
@@ -134,25 +143,6 @@ a.model-card:hover {
 
 <div class="models-timeline">
     <div class="timeline-container">
-        <div class="year-column">
-            <div class="year-header">2022</div>
-            <div class="models-list">
-                <a href="/wiki/nai/models/stable-diffusion-1/" class="model-card">Stable Diffusion v1</a>
-                <a href="/wiki/nai/models/stable-diffusion-1/#novelai-v1" class="model-card">NovelAI v1</a>
-                <span class="model-card">Stable Diffusion v2</span>
-            </div>
-            <div class="timeline-line"></div>
-        </div>
-        <div class="year-column">
-            <div class="year-header">2023</div>
-            <div class="models-list">
-                <a href="/wiki/nai/lora" class="model-card">LoRA</a>
-                <a href="/wiki/nai/controlnet" class="model-card">ControlNet</a>
-                <a href="/wiki/nai/models/stable-diffusion-xl/" class="model-card">Stable Diffusion XL ⭐</a>
-                <a href="/wiki/nai/models/stable-diffusion-1/#easyfluff--hll" class="model-card">EasyFluff + HLL</a>
-            </div>
-            <div class="timeline-line"></div>
-        </div>
         <div class="year-column">
             <div class="year-header">2024</div>
             <div class="models-list">
@@ -181,6 +171,34 @@ a.model-card:hover {
                 <span href="#" class="model-card">FLUX.1-Kontext-dev</span>
                 <span href="#" class="model-card">FLUX.2</span>
                 <span href="#" class="model-card">Z-Image</span>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+        <div class="year-column">
+            <div class="year-header">2026</div>
+            <div class="models-list">
+                <span href="#" class="model-card">LTX-2</span>
+                <span href="#" class="model-card">FLUX.2 klein</span>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-divider"></div>
+        <div class="year-column">
+            <div class="year-header">2022</div>
+            <div class="models-list">
+                <a href="/wiki/nai/models/stable-diffusion-1/" class="model-card">Stable Diffusion v1</a>
+                <a href="/wiki/nai/models/stable-diffusion-1/#novelai-v1" class="model-card">NovelAI v1</a>
+                <span class="model-card">Stable Diffusion v2</span>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+        <div class="year-column">
+            <div class="year-header">2023</div>
+            <div class="models-list">
+                <a href="/wiki/nai/lora" class="model-card">LoRA</a>
+                <a href="/wiki/nai/controlnet" class="model-card">ControlNet</a>
+                <a href="/wiki/nai/models/stable-diffusion-xl/" class="model-card">Stable Diffusion XL ⭐</a>
+                <a href="/wiki/nai/models/stable-diffusion-1/#easyfluff--hll" class="model-card">EasyFluff + HLL</a>
             </div>
             <div class="timeline-line"></div>
         </div>
