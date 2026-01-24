@@ -346,7 +346,7 @@ a.model-card-title:hover::after {
                 <div class="model-card">
                     <span class="model-card-title">LTX-2</span>
                     <span class="model-card-links">
-                        <a class="hf-link" href="https://huggingface.co/Lightricks/LTX-Video" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/Lightricks/LTX-2" target="_blank"></a>
                         <a class="comfyui-link" href="https://docs.comfy.org/tutorials/video/ltx/ltx-2" target="_blank"></a>
                     </span>
                 </div>
