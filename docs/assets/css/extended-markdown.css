@@ -53,3 +53,23 @@
 .md-grid {
     max-width: 1670px;
 }
+
+.hf-link,
+.comfyui-link,
+.civitai-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.hf-link {
+    background: url("../logos/huggingface.png") no-repeat center / contain;
+}
+
+.comfyui-link {
+    background: url("../logos/comfyui.png") no-repeat center / contain;
+}
+
+.civitai-link {
+    background: url("../logos/civitai.png") no-repeat center / contain;
+}

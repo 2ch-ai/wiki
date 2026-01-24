@@ -60,38 +60,93 @@ title: Диффузионные модели
 }
 
 .model-card {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 8px 10px;
     position: relative;
     overflow: hidden;
-    
+
     text-decoration: none;
-    color: var(--md-typeset-color); 
+    color: var(--md-typeset-color);
     font-weight: 500;
-    
+
     background: var(--md-default-bg-color);
     border-radius: 10px;
     border-left: 4px solid #526cfe;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     text-wrap: nowrap;
-    
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-a.model-card::before {
+.model-card::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
-    
-    background: linear-gradient(90deg, transparent, rgba(82, 108, 254, 0.1), transparent);
-    transition:
-        left 0.3s ease !important,
-        box-shadow 0.3s ease !important;
+
+    background: linear-gradient(90deg, rgba(82, 108, 254, 0.06), transparent);
+    opacity: 0;
+    transition: opacity 0.25s ease;
 }
+
+.model-card:hover::before {
+    opacity: 1;
+}
+
+.model-card-title {
+    text-decoration: none;
+    color: var(--md-typeset-color);
+    position: relative;
+    z-index: 1;
+    transition: color 0.2s ease;
+}
+
+a.model-card-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #526cfe;
+    border-radius: 1px;
+    transition: width 0.25s ease;
+}
+
+a.model-card-title:hover {
+    color: #526cfe;
+}
+
+a.model-card-title:hover::after {
+    width: 100%;
+}
+
+.model-card-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    padding-left: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.model-card-links .hf-link,
+.model-card-links .comfyui-link,
+.model-card-links .civitai-link {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.model-card-links .hf-link:hover,
+.model-card-links .comfyui-link:hover,
+.model-card-links .civitai-link:hover {
+    opacity: 1;
+}
+
 
 .timeline-line {
     position: absolute;
@@ -105,9 +160,6 @@ a.model-card::before {
     transform: translateX(-50%);
 }
 
-a.model-card:hover {
-    box-shadow: 0 12px 35px rgba(82, 108, 254, 0.3);
-}
 
 /* ================================
    Responsive Design - Mobile & Tablet
@@ -146,39 +198,166 @@ a.model-card:hover {
         <div class="year-column">
             <div class="year-header">2024</div>
             <div class="models-list">
-                <a href="/wiki/nai/models/stable-diffusion-xl/#pony-diffusion-v6-xl" class="model-card">Pony Diffusion v6 XL</a>
-                <span class="model-card">Stable Cascade</span>
-                <span href="#" class="model-card">Stable Diffusion v3.0</span>
-                <span href="#" class="model-card">AuraFlow</span>
-                <a href="/wiki/nai/models/flux/" class="model-card">FLUX.1</a>
-                <a href="/wiki/nai/models/stable-diffusion-xl/#illustrious-xl" class="model-card">Illustrious-XL v0.1</a>
-                <span href="#" class="model-card">Stable Diffusion v3.5</span>
-                <span href="#" class="model-card">HunyuanVideo</span>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/stable-diffusion-xl/#pony-diffusion-v6-xl" class="model-card-title">Pony Diffusion v6 XL</a>
+                    <span class="model-card-links">
+                        <a class="civitai-link" href="https://civitai.com/models/257749/pony-diffusion-v6-xl" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Stable Cascade</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/stabilityai/stable-cascade" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/stable_cascade/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Stable Diffusion v3.0</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/stabilityai/stable-diffusion-3-medium" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/sd3/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">AuraFlow</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/collections/fal/auraflow" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/aura_flow/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/flux/" class="model-card-title">FLUX.1</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/flux/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/stable-diffusion-xl/#illustrious-xl" class="model-card-title">Illustrious-XL v0.1</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0" target="_blank"></a>
+                        <a class="civitai-link" href="https://civitai.com/models/795765/illustrious-xl" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Stable Diffusion v3.5</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/collections/stabilityai/stable-diffusion-35" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/sd3/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">HunyuanVideo</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/tencent/HunyuanVideo" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/hunyuan_video/" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
         <div class="year-column">
             <div class="year-header">2025</div>
             <div class="models-list">
-                <span href="#" class="model-card">Wan 2.1</span>
-                <a href="/wiki/nai/models/lumina-image-2/" class="model-card">Lumina Image 2</a>
-                <span href="#" class="model-card">Chroma</span>
-                <a href="/wiki/nai/models/qwen-image/" class="model-card">Qwen Image</a>
-                <a href="/wiki/nai/models/qwen-image/" class="model-card">Qwen Image Edit</a>
-                <a href="/wiki/nai/models/lumina-image-2/#neta-lumina" class="model-card">Neta-Lumina</a>
-                <span href="#" class="model-card">Wan 2.2</span>
-                <span href="#" class="model-card">FLUX.1-Krea-dev</span>
-                <span href="#" class="model-card">FLUX.1-Kontext-dev</span>
-                <span href="#" class="model-card">FLUX.2</span>
-                <span href="#" class="model-card">Z-Image</span>
+                <div class="model-card">
+                    <span class="model-card-title">Wan 2.1</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://github.com/Wan-Video/Wan2.1" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/wan" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/lumina-image-2/" class="model-card-title">Lumina Image 2</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/lumina2" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Chroma</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/lodestones/Chroma1-HD" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/chroma" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/qwen-image/" class="model-card-title">Qwen Image</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/Qwen/Qwen-Image" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/qwen_image/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/qwen-image/" class="model-card-title">Qwen Image Edit</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/Qwen/Qwen-Image-Edit" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/Qwen/Qwen-Image-Edit-2511" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/qwen_image/#edit-model-v2509" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/lumina-image-2/#neta-lumina" class="model-card-title">Neta-Lumina</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/neta-art/Neta-Lumina" target="_blank"></a>
+                        <a class="civitai-link" href="https://civitai.com/models/1612109/neta-lumina" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Wan 2.2</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/collections/Wan-AI/wan22" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/wan22" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">FLUX.1-Krea-dev</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/flux/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">FLUX.1-Kontext-dev</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/flux/#flux-kontext-image-editing-model" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">FLUX.2</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/flux2/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Z-Image Turbo</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/Tongyi-MAI/Z-Image-Turbo" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/z_image/" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
         <div class="year-column">
             <div class="year-header">2026</div>
             <div class="models-list">
-                <span href="#" class="model-card">LTX-2</span>
-                <span href="#" class="model-card">FLUX.2 klein</span>
+                <div class="model-card">
+                    <span class="model-card-title">LTX-2</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/Lightricks/LTX-Video" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/ltxv/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">FLUX.2 klein</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs/FLUX.2-klein-4B" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs/FLUX.2-klein-9B" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/flux2/" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
@@ -186,19 +365,52 @@ a.model-card:hover {
         <div class="year-column">
             <div class="year-header">2022</div>
             <div class="models-list">
-                <a href="/wiki/nai/models/stable-diffusion-1/" class="model-card">Stable Diffusion v1</a>
-                <a href="/wiki/nai/models/stable-diffusion-1/#novelai-v1" class="model-card">NovelAI v1</a>
-                <span class="model-card">Stable Diffusion v2</span>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/stable-diffusion-1/" class="model-card-title">Stable Diffusion v1</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/stable-diffusion-1/#novelai-v1" class="model-card-title">NovelAI v1</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/NovelAI/nai-anime-v1-full" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Stable Diffusion v2</span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
         <div class="year-column">
             <div class="year-header">2023</div>
             <div class="models-list">
-                <a href="/wiki/nai/lora" class="model-card">LoRA</a>
-                <a href="/wiki/nai/controlnet" class="model-card">ControlNet</a>
-                <a href="/wiki/nai/models/stable-diffusion-xl/" class="model-card">Stable Diffusion XL ⭐</a>
-                <a href="/wiki/nai/models/stable-diffusion-1/#easyfluff--hll" class="model-card">EasyFluff + HLL</a>
+                <div class="model-card">
+                    <a href="/wiki/nai/lora" class="model-card-title">LoRA</a>
+                    <span class="model-card-links">
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/lora/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/controlnet" class="model-card-title">ControlNet</a>
+                    <span class="model-card-links">
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/controlnet/" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/stable-diffusion-xl/" class="model-card-title">Stable Diffusion XL</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0" target="_blank"></a>
+                        <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/sdxl" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/stable-diffusion-1/#easyfluff--hll" class="model-card-title">EasyFluff + HLL</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/CluelessC/hll-test/tree/main/lyco" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
