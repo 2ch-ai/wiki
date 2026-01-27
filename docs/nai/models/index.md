@@ -358,6 +358,13 @@ a.model-card-title:hover::after {
                         <a class="comfyui-link" href="https://comfyanonymous.github.io/ComfyUI_examples/flux2/" target="_blank"></a>
                     </span>
                 </div>
+                <div class="model-card">
+                    <span class="model-card-title">Z-Image</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/Tongyi-MAI/Z-Image" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/Comfy-Org/z_image/tree/main/split_files/diffusion_models" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
