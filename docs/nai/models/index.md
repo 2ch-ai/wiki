@@ -365,6 +365,12 @@ a.model-card-title:hover::after {
                         <a class="hf-link" href="https://huggingface.co/Comfy-Org/z_image/tree/main/split_files/diffusion_models" target="_blank"></a>
                     </span>
                 </div>
+                <div class="model-card">
+                    <span class="model-card-title">Anima</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/circlestone-labs/Anima" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
