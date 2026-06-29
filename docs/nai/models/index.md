@@ -371,6 +371,21 @@ a.model-card-title:hover::after {
                         <a class="hf-link" href="https://huggingface.co/circlestone-labs/Anima" target="_blank"></a>
                     </span>
                 </div>
+                <div class="model-card">
+                    <span class="model-card-title">Ideogram 4</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/ideogram-ai/ideogram-4-fp8" target="_blank"></a>
+                        <a class="comfyui-link" href="https://docs.comfy.org/tutorials/image/ideogram/ideogram-v4" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">Krea 2</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/krea/Krea-2-Raw" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/krea/Krea-2-Turbo" target="_blank"></a>
+                        <a class="comfyui-link" href="https://docs.comfy.org/tutorials/image/krea/krea-2" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
