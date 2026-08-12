@@ -386,6 +386,14 @@ a.model-card-title:hover::after {
                         <a class="comfyui-link" href="https://docs.comfy.org/tutorials/image/krea/krea-2" target="_blank"></a>
                     </span>
                 </div>
+                <div class="model-card">
+                    <span class="model-card-title">MiniMax H3</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/Comfy-Org/MiniMax-H3" target="_blank"></a>
+                        <a class="comfyui-link" href="https://docs.comfy.org/tutorials/video/minimax/minimax-h3" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
@@ -456,7 +464,30 @@ a.model-card-title:hover::after {
 
 **Какую модель выбрать для генерации видео?**  
 
-WAN 2.2
+WAN 2.2 — самый обкатанный вариант: веса лежат в открытом доступе, есть лоры и поддержка в основных интерфейсах.
+
+Если нужно видео **со звуком в один проход** — **MiniMax H3** (Hailuo 3.0), омни-модель от MiniMax: анонс 31 июля 2026, веса выложили на обниморду в начале августа.
+
+- 33B трансформер, 4-15 секунд 24fps со встроенным стерео-аудио — речь, SFX и музыка одним проходом
+- Режимы: t2v, i2v и first-last-frame (веса `fl2va`), reference-to-video (`ref2va`)
+- 768p, апскейл до 2K отдельным модулем
+- Длина ролика по формуле `length % 17 == 5` (5, 22, 39, ..., 124 кадра ≈ 5 секунд), холст кратен 32 с капом 768x1344
+- Лоры тренируются в [ai-toolkit](https://github.com/ostris/ai-toolkit), в том числе по картинкам
+
+Качать удобнее [репак Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3) — там готовые кванты, разложенные по папкам ComfyUI (оригинал — [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)). Нужны DiT, text encoder и оба VAE (5 ГБ видео + 0.6 ГБ аудио, вариант один).
+
+| Карта | DiT | Text encoder |
+| ----- | --- | ------------ |
+| RTX 50xx | `pruned_fp8_scaled`, 21 ГБ | `nvfp4_awq`, 16 ГБ |
+| RTX 40xx | `pruned_fp8_scaled`, 21 ГБ | `int8_convrot`, 27 ГБ |
+| RTX 30xx | `pruned_int8_convrot`, 21 ГБ | `int8_convrot`, 27 ГБ |
+
+`pruned` — это версия без AdaLN-веток (13B параметров из 33B), которые при инференсе всё равно кешируются; штатные воркфлоу рассчитаны именно на неё. Полные `bf16` (66 ГБ DiT, 52 ГБ энкодер) на одну карту не влезают ни при каком раскладе.
+
+!!! warning "Требования"
+    Нужен ComfyUI **0.30.0** или новее — раньше нет нод `MiniMaxH3*`. Даже в квантах DiT и энкодер вместе занимают 37-48 ГБ, так что на потребительских картах модель работает только с выгрузкой в RAM.
+
+    fp8 умеет считать Ada и новее, fp4 — только Blackwell. На 30xx fp8-веса запустятся, но с апкастом в bf16 при вычислении — сэкономят VRAM, а не время, поэтому там `int8_convrot`. Энкодера в `fp8` не выкладывали вообще, отсюда разнобой в таблице.
 
 ## Виды моделей
 
