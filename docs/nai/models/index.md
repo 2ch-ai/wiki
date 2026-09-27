@@ -394,6 +394,14 @@ a.model-card-title:hover::after {
                         <a class="comfyui-link" href="https://docs.comfy.org/tutorials/video/minimax/minimax-h3" target="_blank"></a>
                     </span>
                 </div>
+                <div class="model-card">
+                    <a href="/wiki/nai/models/qwen-image/#qwen-image-21" class="model-card-title">Qwen-Image-2.1</a>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/Qwen/Qwen-Image-2.1" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/Comfy-Org/Qwen-Image-2.1" target="_blank"></a>
+                        <a class="comfyui-link" href="https://docs.comfy.org/tutorials/image/qwen/qwen-image-2-1" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
