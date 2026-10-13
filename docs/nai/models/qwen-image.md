@@ -156,9 +156,21 @@ GGUF - это формат для сжатия нейронных сетей, к
 
 **Промпт-энхансеры.** Отдельно выложены дообученные Qwen3.5-VL 9B — [Qwen-Image-2.1-PE-T2I](https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I) и [Qwen-Image-2.1-PE-I2I](https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I): разворачивают короткий промпт в подробное описание и подсказывают соотношение сторон.
 
+### Qwen-Image-2.1-Turbo
+
+[Qwen-Image-2.1-Turbo](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) — ускоренный чекпоинт Qwen-Image-2.1 на **8 шагов денойзинга** вместо 40. Архитектура та же (7B, txt2img + редактирование), загружается тем же пайплайном `QwenImage21Pipeline` в Diffusers.
+
+Особенности:
+
+- Рекомендуемый 8-шаговый сэмплинг-график сохранён прямо в чекпоинте и подхватывается автоматически — `num_inference_steps` его не перекрывает (для экспериментов можно задать `sigmas` вручную, но другие графики для Turbo не проверялись).
+- По умолчанию CFG = 1.
+- Кеширование префикса (текст + референсы считаются один раз и переиспользуются) включается флагом `use_kv_cache=True`.
+- Соотношения сторон и разрешения — те же, что у базовой 2.1 (см. таблицу выше).
+
 ### Ссылки
 
 - [Офф. репозиторий на HuggingFace](https://huggingface.co/Qwen/Qwen-Image-2.1)
+- [Qwen-Image-2.1-Turbo на HuggingFace](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo)
 - [Репозиторий на GitHub](https://github.com/QwenLM/Qwen-Image-2.1)
 - [Анонс в блоге Qwen](https://qwen.ai/blog?id=qwen-image-2.1)
 - [Демо на HuggingFace Spaces](https://huggingface.co/spaces/Qwen/Qwen-Image-2.1)
