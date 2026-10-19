@@ -403,6 +403,26 @@ a.model-card-title:hover::after {
                         <a class="comfyui-link" href="https://docs.comfy.org/tutorials/image/qwen/qwen-image-2-1" target="_blank"></a>
                     </span>
                 </div>
+                <div class="model-card">
+                    <span class="model-card-title">Kroma</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/lodestones/Kroma" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">MOSS-Image</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT" target="_blank"></a>
+                        <a class="comfyui-link" href="https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md" target="_blank"></a>
+                    </span>
+                </div>
+                <div class="model-card">
+                    <span class="model-card-title">FLUX 3 Image Klein</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/black-forest-labs/flux-3-image-klein" target="_blank"></a>
+                        <a class="comfyui-link" href="https://docs.comfy.org/tutorials/flux/flux-3-klein" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
