@@ -2,3 +2,9 @@ mkdocs==1.5.3
 mkdocs-material==9.5.3
 mkdocs-glightbox==0.5.2
 mkdocs-git-revision-date-localized-plugin==1.2.2
+
+# click>=8.3 ломает livereload в mkdocs 1.5.3 на Python 3.14:
+# --no-livereload (flag_value=False) перекрывает default=True,
+# и `mkdocs serve` молча стартует без отслеживания файлов.
+# https://github.com/mkdocs/mkdocs/issues/4032
+click==8.2.1
