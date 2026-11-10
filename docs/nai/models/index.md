@@ -423,6 +423,14 @@ a.model-card-title:hover::after {
                         <a class="comfyui-link" href="https://docs.comfy.org/tutorials/flux/flux-3-klein" target="_blank"></a>
                     </span>
                 </div>
+                <div class="model-card">
+                    <span class="model-card-title">MiniMax H3 Image</span>
+                    <span class="model-card-links">
+                        <a class="hf-link" href="https://huggingface.co/MiniMaxAI/MiniMax-H3-Image" target="_blank"></a>
+                        <a class="hf-link" href="https://huggingface.co/Comfy-Org/MiniMax-H3-Image" target="_blank"></a>
+                        <a class="comfyui-link" href="https://docs.comfy.org/tutorials/image/minimax/minimax-h3-image" target="_blank"></a>
+                    </span>
+                </div>
             </div>
             <div class="timeline-line"></div>
         </div>
